@@ -1,6 +1,15 @@
 # testclim
 
-Welcome to your InvenioRDM instance.
+This is the ACD_Guide version of [invenioRDM](https://inveniordm.docs.cern.ch) to build a portal of climate research resources available in Australia.
+The original code is copyrighted to:
+
+```
+Copyright (C) 2019-2021 CERN.
+Copyright (C) 2019-2021 Northwestern University.
+Copyright (C)      2021 TU Wien.
+Copyright (C)      2021 Graz University of Technology.
+```
+This repo contains our customization files, the rest of the readme is from the original repository and contains generic instructions to set up an invenioRDM instance.
 
 ## Getting started
 
