@@ -1,0 +1,36 @@
+﻿- id: sub-day
+  scheme: "frequency"
+  subject: "Sub-daily"
+- id: day
+  scheme: "frequency"
+  subject: "Daily"
+- id: mon
+  scheme: "frequency"
+  subject: "Monthly"
+- id: decad 
+  scheme: "frequency"
+  subject: "Decadal"
+- id: year
+  scheme: "frequency"
+  subject: "Annual"
+- id: clim-hr 
+  scheme: "frequency"
+  subject:  "Hourly Climatology"
+- id: clim-day 
+  scheme: "frequency"
+  subject: "Daily Climatology"
+- id: clim-week 
+  scheme: "frequency"
+  subject: "Weekly Climatology"
+- id: clim-mon
+  scheme: "frequency"
+  subject: "Monthly Climatology"
+- id: clim-seas 
+  scheme: "frequency"
+  subject: "Seasonal Climatology"
+- id: clim-year 
+  scheme: "frequency"
+  subject: "Annual Climatology"
+- id: clim-normal
+  scheme: "frequency"
+  subject: "Climate Normal (30-year climatology)"

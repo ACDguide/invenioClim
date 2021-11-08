@@ -1,0 +1,111 @@
+- id: "3702" 
+  scheme: ANZSRC-FOR 
+  subject: "Climate Change Science"
+- id: "370201"
+  scheme: ANZSRC-FOR 
+  subject: "Climate change processes"
+- id: "370202"
+  scheme: ANZSRC-FOR 
+  subject: "Climatology"
+- id: "370203"
+  scheme: ANZSRC-FOR 
+  subject: "Greenhouse gas inventories and fluxes"
+- id: "370299"
+  scheme: ANZSRC-FOR 
+  subject: "Climate change science not elsewhere classified"
+- id: "3701" 
+  scheme: ANZSRC-FOR 
+  subject: "Atmospheric sciences"
+- id: "370101"
+  scheme: ANZSRC-FOR 
+  subject: "Adverse weather events"
+- id: "370102"
+  scheme: ANZSRC-FOR 
+  subject: "Air pollution processes and air quality measurement"
+- id: "370103"
+  scheme: ANZSRC-FOR 
+  subject: "Atmospheric aerosols"
+- id: "370104"
+  scheme: ANZSRC-FOR 
+  subject: "Atmospheric composition, chemistry and processes"
+- id: "370105"
+  scheme: ANZSRC-FOR 
+  subject: "Atmospheric dynamics"
+- id: "370106"
+  scheme: ANZSRC-FOR 
+  subject: "Atmospheric radiation"
+- id: "370107"
+  scheme: ANZSRC-FOR 
+  subject: "Cloud physics"
+- id: "370108"
+  scheme: ANZSRC-FOR 
+  subject: "Meteorology"
+- id: "370109"
+  scheme: ANZSRC-FOR 
+  subject: "Tropospheric and stratospheric physics"
+- id: "370199"
+  scheme: ANZSRC-FOR 
+  subject: "Atmospheric sciences not elsewhere classified"
+- id: "3704"
+  scheme: ANZSRC-FOR 
+  subject: "Geoinformatics"
+- id: "370401" 
+  scheme: ANZSRC-FOR 
+  subject: "Computational modelling and simulation in earth sciences"
+- id: "3707"
+  scheme: ANZSRC-FOR 
+  subject: "Hydrology"
+- id: "370703" 
+  scheme: ANZSRC-FOR 
+  subject: "Groundwater hydrology"
+- id: "370704" 
+  scheme: ANZSRC-FOR 
+  subject: "Surface water hydrology"
+- id: "3708"
+  scheme: ANZSRC-FOR 
+  subject: "Oceanography"
+- id: "370801" 
+  scheme: ANZSRC-FOR 
+  subject: "Biological oceanography"
+- id: "370802" 
+  scheme: ANZSRC-FOR 
+  subject: "Chemical oceanography"
+- id: "370803" 
+  scheme: ANZSRC-FOR 
+  subject: "Physical oceanography"
+- id: "370899" 
+  scheme: ANZSRC-FOR 
+  subject: "Oceanography not elsewhere classified"
+- id: "3709"
+  scheme: ANZSRC-FOR 
+  subject: "Physical geography and environmental geoscience"
+- id: "370904" 
+  scheme: ANZSRC-FOR 
+  subject: "Palaeoclimatology"
+- id: "4101" 
+  scheme: ANZSRC-FOR 
+  subject: "Climate change impacts and adaptation"
+- id: "410101" 
+  scheme: ANZSRC-FOR 
+  subject: "Carbon sequestration science"
+- id: "410102" 
+  scheme: ANZSRC-FOR 
+  subject: "Ecological impacts of climate change and ecological adaptation"
+- id: "410103" 
+  scheme: ANZSRC-FOR 
+  subject: "Human impacts of climate change and human adaptation"
+- id: "4106" 
+  scheme: ANZSRC-FOR 
+  subject: "Soil sciences"
+- id: "410601" 
+  scheme: ANZSRC-FOR 
+  subject: "Land capability and soil productivity"
+- id: "410604" 
+  scheme: ANZSRC-FOR 
+  subject: "Soil chemistry and soil carbon sequestration (excl. carbon sequestration science)"
+- id: "410605" 
+  scheme: ANZSRC-FOR 
+  subject: "Soil physics"
+- id: "410699" 
+  scheme: ANZSRC-FOR 
+  subject: "Soil sciences not elsewhere classified"

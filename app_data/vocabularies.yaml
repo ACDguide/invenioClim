@@ -1,0 +1,44 @@
+affiliations:
+  pid-type: aff
+  schemes:
+    - id: ROR
+      name: Research Organization Registry
+      uri: "https://ror.org/"
+      data-file: vocabularies/affiliations_ror.yaml
+creatorsroles:
+  pid-type: crr
+  data-file: vocabularies/roles.yaml
+contributorsroles:
+  pid-type: cor
+  data-file: vocabularies/roles.yaml
+resourcetypes:
+  pid-type: rsrct
+  data-file: vocabularies/resource_types.yaml
+datetypes:
+  pid-type: dat
+  data-file: vocabularies/date_types.yaml
+descriptiontypes:
+  pid-type: dty
+  data-file: vocabularies/description_types.yaml
+languages:
+  pid-type: lng 
+  data-file: vocabularies/languages.yaml
+subjects:
+  pid-type: sub
+  schemes:
+    - id: ANZSRC-FOR
+      name: ANZSRC 2020 Fields of Research
+      uri: "https://www.abs.gov.au/statistics/classifications/australian-and-new-zealand-standard-research-classification-anzsrc/2020/anzsrc2020_for.xlsx"
+      data-file: vocabularies/subjects_anzsrc_for.yaml
+    - id: realm 
+      name: ACDGuide realms
+      data-file: vocabularies/realms.yaml
+    - id: region 
+      name: ACDGuide regions
+      data-file: vocabularies/regions.yaml
+    - id: frequency 
+      name: ACDGuide frequencies
+      data-file: vocabularies/frequencies.yaml
+    - id: variable 
+      name: ACDGuide variables
+      data-file: vocabularies/variables.yaml
