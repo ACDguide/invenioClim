@@ -1,39 +1,30 @@
 - id: aerosol-var
   scheme: "variable"
   subject: "aerosols"
-- id: air-opt
-  scheme: "variable"
-  subject: "Air optical properties"
 - id: air-temperature
   scheme: "variable"
   subject: "Air temperature"
-- id: air-pressure
-  scheme: "variable"
-  subject: "Air pressure"
 - id: wind
   scheme: "variable"
   subject: "Wind"
 - id: climate-index
   scheme: "variable"
-  subject: "Climate index"
+  subject: "Climate indexes"
 - id: cloud-properties
   scheme: "variable"
-  subject: "Cloud properties"
+  subject: "Cloud"
 - id: evaporation
   scheme: "variable"
   subject: "evaporation"
-- id: geopotential
-  scheme: "variable"
-  subject: "geopotential"
 - id: humidity
   scheme: "variable"
   subject: "humidity"
 - id: land-ice
   scheme: "variable"
-  subject: "Land ice properties"
+  subject: "Land ice"
 - id: land-surface
   scheme: "variable"
-  subject: "Land surface properties"
+  subject: "Land surface"
 - id: ocean-mass-properties
   scheme: "variable"
   subject: "Ocean mass"
@@ -48,16 +39,13 @@
   subject: "Sea ice properties"
 - id: sea-surface-level
   scheme: "variable"
-  subject: "Sea surface level"
-- id: sea-surface-waves
-  scheme: "variable"
-  subject: "Sea waves properties"
+  subject: "Sea level"
 - id: sea-water-temperature
   scheme: "variable"
   subject: "Sea water temperature"
 - id: sea-water-velocity
   scheme: "variable"
-  subject: "Sea water velocity"
+  subject: "Ocean currents"
 - id: snow-properties
   scheme: "variable"
   subject: "Snow properties"

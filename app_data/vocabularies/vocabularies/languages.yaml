@@ -1,0 +1,40 @@
+- id: eng
+  props:
+    alpha_2: en
+  tags:
+  - individual
+  - living
+  title:
+    en: English
+- id: fra
+  props:
+    alpha_2: fr
+  tags:
+  - individual
+  - living
+  title:
+    en: French
+- id: deu
+  props:
+    alpha_2: de
+  tags:
+  - individual
+  - living
+  title:
+    en: German
+- id: jpn
+  props:
+    alpha_2: ja
+  tags:
+  - individual
+  - living
+  title:
+    en: Japanese
+- id: spa
+  props:
+    alpha_2: es
+  tags:
+  - individual
+  - living
+  title:
+    en: Spanish

@@ -1,0 +1,30 @@
+- id: abstract
+  props:
+    datacite: Abstract
+  title:
+    en: Abstract
+- id: quality-info
+  props:
+    datacite: TechnicalInfo
+  title:
+    en: Quality information
+- id: citation-access
+  props:
+    datacite: Other
+  title:
+    en: Citation and access information
+- id: technical-info
+  props:
+    datacite: TechnicalInfo
+  title:
+    en: Technical info
+- id: location
+  props:
+    datacite: Other
+  title:
+    en: Local host
+- id: other-description
+  props:
+    datacite: Other
+  title:
+    en: Other

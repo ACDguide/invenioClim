@@ -39,6 +39,9 @@ subjects:
     - id: frequency 
       name: ACDGuide frequencies
       data-file: vocabularies/frequencies.yaml
+    - id: hres 
+      name: ACDGuide approximate horizontal resolutions
+      data-file: vocabularies/horizontal_res.yaml
     - id: variable 
       name: ACDGuide variables
       data-file: vocabularies/variables.yaml

@@ -1,0 +1,36 @@
+- id: global 
+  scheme: "region"
+  subject: "Global"
+- id: australia 
+  scheme: "region"
+  subject: "Australia" 
+- id: oceania
+  scheme: "region"
+  subject: "Oceania" 
+- id:  arctic-ocean 
+  scheme: "region"
+  subject: "Arctic ocean" 
+- id: atlantic 
+  scheme: "region"
+  subject: "Atlantic ocean" 
+- id: indian
+  scheme: "region"
+  subject: "Indian ocean" 
+- id: pacific
+  scheme: "region"
+  subject: "Pacific Ocean"
+- id:  southern 
+  scheme: "region"
+  subject: "Southern ocean" 
+- id: europe 
+  scheme: "region"
+  subject: "Europe" 
+- id: north-america 
+  scheme: "region"
+  subject: "North America" 
+- id: south-america 
+  scheme: "region"
+  subject: "South America" 
+- id: antarctica 
+  scheme: "region"
+  subject: "Antarctica" 

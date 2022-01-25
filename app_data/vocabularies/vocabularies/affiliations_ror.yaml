@@ -1,0 +1,297 @@
+- acronym: ANU
+  id: 019wvm592
+  identifiers:
+  - identifier: 019wvm592
+    scheme: ror
+  name: Australian National University
+  title:
+    en: Australian National University
+- id: 02bfwt286
+  identifiers:
+  - identifier: 02bfwt286
+    scheme: ror
+  name: Monash University
+  title:
+    en: Monash University
+- acronym: UQ
+  id: 00rqy9422
+  identifiers:
+  - identifier: 00rqy9422
+    scheme: ror
+  name: University of Queensland
+  title:
+    en: University of Queensland
+- id: 01sf06y89
+  identifiers:
+  - identifier: 01sf06y89
+    scheme: ror
+  name: Macquarie University
+  title:
+    en: Macquarie University
+- acronym: UNSW
+  id: 03r8z3t63
+  identifiers:
+  - identifier: 03r8z3t63
+    scheme: ror
+  name: UNSW Sydney
+  title:
+    en: UNSW Sydney
+- id: 01kj2bm70
+  identifiers:
+  - identifier: 01kj2bm70
+    scheme: ror
+  name: Newcastle University
+  title:
+    en: Newcastle University
+- acronym: UOW
+  id: 00jtmb277
+  identifiers:
+  - identifier: 00jtmb277
+    scheme: ror
+  name: University of Wollongong
+  title:
+    en: University of Wollongong
+- id: 01ej9dk98
+  identifiers:
+  - identifier: 01ej9dk98
+    scheme: ror
+  name: University of Melbourne
+  title:
+    en: University of Melbourne
+- acronym: UTAS
+  id: 01nfmeh72
+  identifiers:
+  - identifier: 01nfmeh72
+    scheme: ror
+  name: University of Tasmania
+  title:
+    en: University of Tasmania
+- id: 00892tw58
+  identifiers:
+  - identifier: 00892tw58
+    scheme: ror
+  name: University of Adelaide
+  title:
+    en: University of Adelaide
+- acronym: JCU
+  id: 04gsp2c11
+  identifiers:
+  - identifier: 04gsp2c11
+    scheme: ror
+  name: James Cook University
+  title:
+    en: James Cook University
+- acronym: UWA
+  id: 047272k79
+  identifiers:
+  - identifier: 047272k79
+    scheme: ror
+  name: University of Western Australia
+  title:
+    en: University of Western Australia
+- acronym: USYD
+  id: 0384j8v12
+  identifiers:
+  - identifier: 0384j8v12
+    scheme: ror
+  name: University of Sydney
+  title:
+    en: University of Sydney
+- id: 01kpzv902
+  identifiers:
+  - identifier: 01kpzv902
+    scheme: ror
+  name: Flinders University
+  title:
+    en: Flinders University
+- acronym: CSIRO
+  id: 03qn8fb07
+  identifiers:
+  - identifier: 03qn8fb07
+    scheme: ror
+  name: Commonwealth Scientific and Industrial Research Organisation
+  title:
+    en: Commonwealth Scientific and Industrial Research Organisation
+- acronym: RMIT
+  id: 04ttjf776
+  identifiers:
+  - identifier: 04ttjf776
+    scheme: ror
+  name: RMIT University
+  title:
+    en: RMIT University
+- id: 01rxfrp27
+  identifiers:
+  - identifier: 01rxfrp27
+    scheme: ror
+  name: La Trobe University
+  title:
+    en: La Trobe University
+- acronym: VU
+  id: 04j757h98
+  identifiers:
+  - identifier: 04j757h98
+    scheme: ror
+  name: Victoria University
+  title:
+    en: Victoria University
+- acronym: UNE
+  id: 04r659a56
+  identifiers:
+  - identifier: 04r659a56
+    scheme: ror
+  name: University of New England
+  title:
+    en: University of New England
+- id: 02czsnj07
+  identifiers:
+  - identifier: 02czsnj07
+    scheme: ror
+  name: Deakin University
+  title:
+    en: Deakin University
+- id: 02sc3r913
+  identifiers:
+  - identifier: 02sc3r913
+    scheme: ror
+  name: Griffith University
+  title:
+    en: Griffith University
+- acronym: CQU
+  id: 023q4bk22
+  identifiers:
+  - identifier: 023q4bk22
+    scheme: ror
+  name: Central Queensland University
+  title:
+    en: Central Queensland University
+- acronym: QUT
+  id: 03pnv4752
+  identifiers:
+  - identifier: 03pnv4752
+    scheme: ror
+  name: Queensland University of Technology
+  title:
+    en: Queensland University of Technology
+- id: 00r4sry34
+  identifiers:
+  - identifier: 00r4sry34
+    scheme: ror
+  name: Murdoch University
+  title:
+    en: Murdoch University
+- id: 01p93h210
+  identifiers:
+  - identifier: 01p93h210
+    scheme: ror
+  name: University of South Australia
+  title:
+    en: University of South Australia
+- id: 031rekg67
+  identifiers:
+  - identifier: 031rekg67
+    scheme: ror
+  name: Swinburne University of Technology
+  title:
+    en: Swinburne University of Technology
+- acronym: UWS
+  id: 03t52dk35
+  identifiers:
+  - identifier: 03t52dk35
+    scheme: ror
+  name: Western Sydney University
+  title:
+    en: Western Sydney University
+- acronym: SCU
+  id: 001xkv632
+  identifiers:
+  - identifier: 001xkv632
+    scheme: ror
+  name: Southern Cross University
+  title:
+    en: Southern Cross University
+- id: 02n415q13
+  identifiers:
+  - identifier: 02n415q13
+    scheme: ror
+  name: Curtin University
+  title:
+    en: Curtin University
+- id: 006jxzx88
+  identifiers:
+  - identifier: 006jxzx88
+    scheme: ror
+  name: Bond University
+  title:
+    en: Bond University
+- acronym: USC
+  id: 016gb9e15
+  identifiers:
+  - identifier: 016gb9e15
+    scheme: ror
+  name: University of the Sunshine Coast
+  title:
+    en: University of the Sunshine Coast
+- acronym: CSU
+  id: 00wfvh315
+  identifiers:
+  - identifier: 00wfvh315
+    scheme: ror
+  name: Charles Sturt University
+  title:
+    en: Charles Sturt University
+- acronym: ECU
+  id: 05jhnwe22
+  identifiers:
+  - identifier: 05jhnwe22
+    scheme: ror
+  name: Edith Cowan University
+  title:
+    en: Edith Cowan University
+- acronym: UC
+  id: 04s1nv328
+  identifiers:
+  - identifier: 04s1nv328
+    scheme: ror
+  name: University of Canberra
+  title:
+    en: University of Canberra
+- id: 05qbzwv83
+  identifiers:
+  - identifier: 05qbzwv83
+    scheme: ror
+  name: Federation University
+  title:
+    en: Federation University
+- acronym: CDU
+  id: 048zcaj52
+  identifiers:
+  - identifier: 048zcaj52
+    scheme: ror
+  name: Charles Darwin University
+  title:
+    en: Charles Darwin University
+- acronym: AIMS
+  id: 03x57gn41
+  identifiers:
+  - identifier: 03x57gn41
+    scheme: ror
+  name: Australian Institute of Marine Science
+  title:
+    en: Australian Institute of Marine Science
+- acronym: AAD
+  id: 05e89k615
+  identifiers:
+  - identifier: 05e89k615
+    scheme: ror
+  name: Australian Antarctic Division
+  title:
+    en: Australian Antarctic Division
+- acronym: USQ
+  id: 04sjbnx57
+  identifiers:
+  - identifier: 04sjbnx57
+    scheme: ror
+  name: University of Southern Queensland
+  title:
+    en: University of Southern Queensland
