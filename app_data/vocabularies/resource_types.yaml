@@ -32,7 +32,7 @@
   tags:
     - depositable
     - linkable
-- id: dataset-obs
+- id: dataset-station
   icon: table
   props:
     csl: dataset
@@ -42,10 +42,10 @@
     openaire_type: dataset
     eurepo: info:eu-repo/semantics/other
     schema.org: https://schema.org/Dataset
-    subtype: dataset-obs 
+    subtype: dataset-station 
     type: dataset
   title:
-    en: Dataset - observations 
+    en: Dataset - Station observations 
   tags:
     - depositable
     - linkable
@@ -62,7 +62,7 @@
     subtype: dataset-sat 
     type: dataset
   title:
-    en: Dataset - satellite 
+    en: Dataset - Satellite 
   tags:
     - depositable
     - linkable
@@ -100,7 +100,7 @@
   tags:
     - depositable
     - linkable
-- id: collection-obs
+- id: collection-station
   icon: table
   props:
     csl: dataset
@@ -110,10 +110,10 @@
     openaire_type: dataset
     eurepo: info:eu-repo/semantics/other
     schema.org: https://schema.org/Dataset
-    subtype: collection-obs 
+    subtype: collection-station 
     type: dataset
   title:
-    en: Collection - observations 
+    en: Collection - Station observations 
   tags:
     - depositable
     - linkable
@@ -130,7 +130,7 @@
     subtype: collection-sat 
     type: dataset
   title:
-    en: Collection - satellite 
+    en: Collection - Satellite 
   tags:
     - depositable
     - linkable

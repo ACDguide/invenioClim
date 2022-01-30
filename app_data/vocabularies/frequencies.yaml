@@ -1,18 +1,39 @@
-﻿- id: sub-day
+﻿- id: sub-30-min
   scheme: "frequency"
-  subject: "Sub-daily"
+  subject: "sub 30-min"
+- id: 30-min 
+  scheme: "frequency"
+  subject: "30-min"
+- id: 1-hr 
+  scheme: "frequency"
+  subject:  "1-Hourly"
+- id: 3-hr 
+  scheme: "frequency"
+  subject:  "1-Hourly"
+- id: 6-hr 
+  scheme: "frequency"
+  subject:  "1-Hourly"
+- id: 12-hr 
+  scheme: "frequency"
+  subject:  "12-Hourly"
 - id: day
   scheme: "frequency"
   subject: "Daily"
+- id: week 
+  scheme: "frequency"
+  subject: "Weekly"
 - id: mon
   scheme: "frequency"
   subject: "Monthly"
-- id: decad 
+- id: season 
   scheme: "frequency"
-  subject: "Decadal"
+  subject: "Seasonal"
 - id: year
   scheme: "frequency"
   subject: "Annual"
+- id: decad 
+  scheme: "frequency"
+  subject: "Decadal"
 - id: clim-hr 
   scheme: "frequency"
   subject:  "Hourly Climatology"
@@ -34,3 +55,6 @@
 - id: clim-normal
   scheme: "frequency"
   subject: "Climate Normal (30-year climatology)"
+- id: event 
+  scheme: "frequency"
+  subject: "Event based"
