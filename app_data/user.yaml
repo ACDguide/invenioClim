@@ -1,7 +1,0 @@
-- email: admin@testclim.org
-  active: False
-  password: zenzer0
-  roles:
-    - admin
-  allow:
-    - superuser-access
