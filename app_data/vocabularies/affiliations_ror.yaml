@@ -104,6 +104,14 @@
   name: Flinders University
   title:
     en: Flinders University
+- acronym: BoM
+  id: 04dkp1p98 
+  identifiers:
+  - identifier: 04dkp1p98
+    scheme: ror 
+  name: Bureau of Meteorology
+  title:
+    en: Bureau of Meteorology
 - acronym: CSIRO
   id: 03qn8fb07
   identifiers:
@@ -112,6 +120,22 @@
   name: Commonwealth Scientific and Industrial Research Organisation
   title:
     en: Commonwealth Scientific and Industrial Research Organisation
+- acronym: NSW-DPI
+  id: 00067tc53
+  identifiers:
+  - identifier: 00067tc53
+    scheme: ror
+  name: NSW Department of Primary Industries
+  title:
+    en: NSW Department of Primary Industries
+- acronym: NSW-DPIE
+  id: 00067tc54
+  identifiers:
+  - identifier: 00067tc54 
+    scheme: ror
+  name: NSW Department of Planning, Industry and Environment
+  title:
+    en: NSW Department of Planning, Industry and Environment
 - acronym: RMIT
   id: 04ttjf776
   identifiers:
@@ -295,3 +319,10 @@
   name: University of Southern Queensland
   title:
     en: University of Southern Queensland
+- acronym: DISER
+  id: 056naxb15
+  identifiers:
+  - identifier: 056naxb15
+  name: Commonwealth Department of Industry, Science, Energy and Resources
+  title:
+    en: Commonwealth Department of Industry, Science, Energy and Resources

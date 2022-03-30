@@ -32,7 +32,7 @@
   tags:
     - depositable
     - linkable
-- id: dataset-station
+- id: dataset-insitu
   icon: table
   props:
     csl: dataset
@@ -42,10 +42,10 @@
     openaire_type: dataset
     eurepo: info:eu-repo/semantics/other
     schema.org: https://schema.org/Dataset
-    subtype: dataset-station 
+    subtype: dataset-insitu 
     type: dataset
   title:
-    en: Dataset - Station observations 
+    en: Dataset - In Situ observations 
   tags:
     - depositable
     - linkable
@@ -63,6 +63,23 @@
     type: dataset
   title:
     en: Dataset - Satellite 
+  tags:
+    - depositable
+    - linkable
+- id: dataset-obs-other
+  icon: table
+  props:
+    csl: dataset
+    datacite_general: Dataset
+    datacite_type: ''
+    openaire_resourceType: '21'
+    openaire_type: dataset
+    eurepo: info:eu-repo/semantics/other
+    schema.org: https://schema.org/Dataset
+    subtype: dataset-insitu 
+    type: dataset
+  title:
+    en: Dataset - Other observations 
   tags:
     - depositable
     - linkable
@@ -100,7 +117,7 @@
   tags:
     - depositable
     - linkable
-- id: collection-station
+- id: collection-reanalysis
   icon: table
   props:
     csl: dataset
@@ -110,10 +127,27 @@
     openaire_type: dataset
     eurepo: info:eu-repo/semantics/other
     schema.org: https://schema.org/Dataset
-    subtype: collection-station 
+    subtype: collection-model 
     type: dataset
   title:
-    en: Collection - Station observations 
+    en: Collection - reanalysis
+  tags:
+    - depositable
+    - linkable
+- id: collection-obs
+  icon: table
+  props:
+    csl: dataset
+    datacite_general: Collection 
+    datacite_type: ''
+    openaire_resourceType: '21'
+    openaire_type: dataset
+    eurepo: info:eu-repo/semantics/other
+    schema.org: https://schema.org/Dataset
+    subtype: collection-insitu 
+    type: dataset
+  title:
+    en: Collection - Observations 
   tags:
     - depositable
     - linkable
@@ -148,6 +182,57 @@
     type: software
   title:
     en: Software
+  tags:
+    - depositable
+    - linkable
+- id: software-notebook
+  icon: code
+  props:
+    csl: software
+    datacite_general: ComputationalNotebook 
+    datacite_type: ''
+    openaire_resourceType: '29'
+    openaire_type: software
+    eurepo: info:eu-repo/semantics/other
+    schema.org: https://schema.org/SoftwareSourceCode
+    subtype: 'notebook'
+    type: software
+  title:
+    en: Computational notebook
+  tags:
+    - depositable
+    - linkable
+- id: software-model 
+  icon: code
+  props:
+    csl: software
+    datacite_general: Model 
+    datacite_type: ''
+    openaire_resourceType: '29'
+    openaire_type: software
+    eurepo: info:eu-repo/semantics/other
+    schema.org: https://schema.org/SoftwareSourceCode
+    subtype: 'model'
+    type: software
+  title:
+    en: Computational model
+  tags:
+    - depositable
+    - linkable
+- id: software-workflow 
+  icon: code
+  props:
+    csl: software
+    datacite_general: Workflow 
+    datacite_type: ''
+    openaire_resourceType: '29'
+    openaire_type: software
+    eurepo: info:eu-repo/semantics/other
+    schema.org: https://schema.org/SoftwareSourceCode
+    subtype: 'workflow'
+    type: software
+  title:
+    en: Workflow
   tags:
     - depositable
     - linkable
@@ -216,6 +301,57 @@
     type: service
   title:
     en: Website/Wiki
+  tags:
+    - depositable
+    - linkable
+- id: metadata 
+  icon: file alternate
+  props:
+    csl: report
+    datacite_general: Text
+    datacite_type: ''
+    openaire_resourceType: '17'
+    openaire_type: publication
+    eurepo: info:eu-repo/semantics/other
+    schema.org: https://schema.org/CreativeWork
+    subtype: ''
+    type: metadata 
+  title:
+    en: Metadata record
+  tags:
+    - depositable
+    - linkable
+- id: standard 
+  icon: file alternate
+  props:
+    csl: other 
+    datacite_general: Text
+    datacite_type: ''
+    openaire_resourceType: '17'
+    openaire_type: publication
+    eurepo: info:eu-repo/semantics/other
+    schema.org: https://schema.org/CreativeWork
+    subtype: ''
+    type: standard 
+  title:
+    en: Standard
+  tags:
+    - depositable
+    - linkable
+- id: event 
+  icon: file alternate
+  props:
+    csl: other 
+    datacite_general: Event 
+    datacite_type: ''
+    openaire_resourceType: '17'
+    openaire_type: publication
+    eurepo: info:eu-repo/semantics/other
+    schema.org: https://schema.org/Event
+    subtype: ''
+    type: event 
+  title:
+    en: Event
   tags:
     - depositable
     - linkable
@@ -304,7 +440,7 @@
   props:
     csl: report
     datacite_general: Text
-    datacite_type: Data management plan
+    datacite_type: Output management plan
     openaire_resourceType: '9'
     openaire_type: publication
     eurepo: info:eu-repo/semantics/technicalDocumentation

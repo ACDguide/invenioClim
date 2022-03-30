@@ -1,0 +1,457 @@
+- affiliations:
+    - name: Bureau of Meteorology 
+    - name: University of Melbourne 
+  family_name: Wales
+  given_name: Scott
+  identifiers: 
+  - identifier: https://orcid.org/0000-0002-0583-9601
+    scheme: orcid
+- affiliations:
+    - name: Bureau of Meteorology 
+  family_name: Chun-Hsu 
+  given_name: Su
+  identifiers: 
+  - identifier: https://orcid.org/0000-0003-2504-0466
+    scheme: orcid
+- affiliations:
+    - name: Bureau of Meteorology 
+  family_name: Murphy 
+  given_name: Brad
+  identifiers: 
+  - identifier: https://orcid.org/0000-0003-4524-6277
+    scheme: orcid
+- affiliations:
+    - name: Bureau of Meteorology 
+  family_name: Trewin
+  given_name: Blair
+  identifiers: 
+  - identifier: https://orcid.org/0000-0001-8186-7885
+    scheme: orcid
+- affiliations:
+    - name: 
+  family_name: Herold 
+  given_name: Nicholas
+  identifiers: 
+  - identifier: https://orcid.org/0000-0003-4293-1770
+    scheme: orcid
+- affiliations:
+    - name: Commonwealth Scientific and Industrial Research Organisation
+  family_name: Grose 
+  given_name: Michael
+  identifiers:
+    - identifier: https://orcid.org/0000-0001-8012-9960
+      scheme: orcid
+- affiliations:
+    - name: Commonwealth Scientific and Industrial Research Organisation
+  family_name: Erwin
+  given_name: Tim
+  identifiers:
+    - identifier: https://orcid.org/0000-0002-4479-6878
+      scheme: orcid
+- affiliations:
+    - name: Commonwealth Scientific and Industrial Research Organisation
+  family_name: Takbash 
+  given_name: Alicia
+  identifiers:
+    - identifier: https://orcid.org/0000-0001-7024-0286
+      scheme: orcid
+- affiliations:
+    - name: Commonwealth Scientific and Industrial Research Organisation
+  family_name: Moore 
+  given_name: Thomas
+  identifiers:
+    - identifier: https://orcid.org/0000-0003-3930-1946
+      scheme: orcid
+- affiliations:
+    - name: University of Michigan 
+  family_name: Martin 
+  given_name: Paige
+  identifiers:
+    - identifier: https://orcid.org/0000-0003-3538-633X
+      scheme: orcid
+- affiliations:
+    - name: Commonwealth Scientific and Industrial Research Organisation
+  family_name: Trenham
+  given_name: Claire
+  identifiers:
+    - identifier: https://orcid.org/0000-0003-4258-9936
+      scheme: orcid
+- affiliations:
+    - name: UNSW Sydney
+  family_name: Abramowitz
+  given_name: Gab
+  identifiers: 
+  - identifier: https://orcid.org/0000-0002-4205-001X
+    scheme: orcid
+- affiliations:
+    - name: Monash University
+  family_name: Ackerley
+  given_name: Duncan
+  identifiers: 
+  - identifier: https://orcid.org/0000-0001-9027-4088
+    scheme: orcid
+- affiliations:
+    - name: UNSW Sydney
+  family_name: Argueso
+  given_name: Daniel
+  identifiers: 
+  - identifier: https://orcid.org/0000-0002-4792-162X
+    scheme: orcid
+- affiliations:
+    - name: University of Tasmania
+  family_name: Buchanan
+  given_name: Pearse
+  identifiers: 
+  - identifier: https://orcid.org/0000-0001-7142-882X
+    scheme: orcid
+- affiliations:
+    - name: UNSW Sydney
+  family_name: Bull
+  given_name: Christopher
+  identifiers: 
+  - identifier: https://orcid.org/0000-0001-8362-3446
+    scheme: orcid
+- affiliations:
+    - name: Monash University
+  family_name: Bunn
+  given_name: Ross
+  identifiers: 
+  - identifier: https://orcid.org/NA
+    scheme: orcid
+- affiliations:
+    - name: UNSW Sydney
+  family_name: Carouge
+  given_name: Claire
+  identifiers: 
+  - identifier: https://orcid.org/0000-0002-0313-8385
+    scheme: orcid
+- affiliations:
+    - name: UNSW Sydney
+  family_name: Chaivaranont
+  given_name: Waisin
+  identifiers: 
+  - identifier: https://orcid.org/0000-0001-9976-4462
+    scheme: orcid
+- affiliations:
+    - name: Curtin University
+  family_name: Chedzey
+  given_name: Helen
+  identifiers: 
+  - identifier: https://orcid.org/0000-0001-6388-6126
+    scheme: orcid
+- affiliations:
+    - name: UNSW Sydney
+  family_name: Contractor
+  given_name: Steefan
+  identifiers: 
+  - identifier: https://orcid.org/0000-0002-3987-2311
+    scheme: orcid
+- affiliations:
+    - name: UNSW Sydney
+  family_name: Di Luca
+  given_name: Alejandro
+  identifiers: 
+  - identifier: https://orcid.org/0000-0002-1481-2961
+    scheme: orcid
+- affiliations:
+    - name: University of Tasmania
+  family_name: Dias
+  given_name: Fabio
+  identifiers: 
+  - identifier: https://orcid.org/0000-0002-2965-2120
+    scheme: orcid
+- affiliations:
+    - name: Monash University
+  family_name: Dittus
+  given_name: Andrea
+  identifiers: 
+  - identifier: https://orcid.org/0000-0001-9598-6869
+    scheme: orcid
+- affiliations:
+    - name: Monash University
+  family_name: Dommenget
+  given_name: Dietmar
+  identifiers: 
+  - identifier: https://orcid.org/0000-0002-5129-7719
+    scheme: orcid
+- affiliations:
+    - name: University of Melbourne
+  family_name: Engel
+  given_name: Chermelle
+  identifiers: 
+  - identifier: https://orcid.org/0000-0002-2984-8959 (?? unsure as there's no info)
+    scheme: orcid
+- affiliations:
+    - name: UNSW Sydney
+  family_name: Evans
+  given_name: Jason
+  identifiers: 
+  - identifier: https://orcid.org/0000-0002-4568-4288
+    scheme: orcid
+- affiliations:
+    - name: University of Tasmania
+  family_name: Fiddes
+  given_name: Sonya
+  identifiers: 
+  - identifier: https://orcid.org/0000-0002-2752-0845
+    scheme: orcid
+- affiliations:
+    - name: UNSW Sydney
+  family_name: Hart
+  given_name: Melissa
+  identifiers: 
+  - identifier: https://orcid.org/0000-0002-3512-8843
+    scheme: orcid
+- affiliations:
+    - name: University of Tasmania
+  family_name: Hayashida
+  given_name: Hakase
+  identifiers: 
+  - identifier: https://orcid.org/0000-0002-6349-4947
+    scheme: orcid
+- affiliations:
+    - name: Australian National University
+  family_name: Heerdegen
+  given_name: Aidan
+  identifiers: 
+  - identifier: https://orcid.org/0000-0002-4481-4896
+    scheme: orcid
+- affiliations:
+    - name: UNSW Sydney
+  family_name: Hobeichi
+  given_name: Sanaa
+  identifiers: 
+  - identifier: https://orcid.org/0000-0001-6825-3854
+    scheme: orcid
+- affiliations:
+    - name: Australian National University
+  family_name: Hogg
+  given_name: Andy
+  identifiers: 
+  - identifier: https://orcid.org/0000-0001-5898-7635
+    scheme: orcid
+- affiliations:
+    - name: Australian National University
+  family_name: Holgate
+  given_name: Chiara
+  identifiers: 
+  - identifier: https://orcid.org/0000-0002-3645-2856
+    scheme: orcid
+- affiliations:
+    - name: UNSW Sydney
+  family_name: Holmes
+  given_name: Ryan
+  identifiers: 
+  - identifier: https://orcid.org/0000-0002-6799-9109
+    scheme: orcid
+- affiliations:
+    - name: Monash University
+  family_name: Jacobs
+  given_name: Stephanie
+  identifiers: 
+  - identifier: https://orcid.org/NA
+    scheme: orcid
+- affiliations:
+    - name: Monash University
+  family_name: Jakob
+  given_name: Christian
+  identifiers: 
+  - identifier: https://orcid.org/0000-0002-5012-3207
+    scheme: orcid
+- affiliations:
+    - name: UNSW Sydney
+  family_name: Jamandre
+  given_name: Carlo
+  identifiers: 
+  - identifier: https://orcid.org/NA
+    scheme: orcid
+- affiliations:
+    - name: University of Melbourne
+  family_name: Lane
+  given_name: Todd
+  identifiers: 
+  - identifier: https://orcid.org/0000-0003-0171-6927
+    scheme: orcid
+- affiliations:
+    - name: Australian National University
+    - name: University of Melbourne
+  family_name: Lewis
+  given_name: Sophie
+  identifiers: 
+  - identifier: https://orcid.org/0000-0001-6416-0634
+    scheme: orcid
+- affiliations:
+    - name: UNSW Sydney
+  family_name: Li
+  given_name: Yue
+  identifiers: 
+  - identifier: https://orcid.org/0000-0002-9734-3418
+    scheme: orcid
+- affiliations:
+    - name: UNSW Sydney
+  family_name: Lipson
+  given_name: Matthew
+  identifiers: 
+  - identifier: https://orcid.org/0000-0001-5322-1796
+    scheme: orcid
+- affiliations:
+    - name: UNSW Sydney
+  family_name: Lorenz
+  given_name: Ruth
+  identifiers: 
+  - identifier: https://orcid.org/0000-0002-3986-1268
+    scheme: orcid
+- affiliations:
+    - name: Curtin University
+  family_name: Lynch
+  given_name: Mervin
+  identifiers: 
+  - identifier: https://orcid.org/0000-0003-4003-0880
+    scheme: orcid
+- affiliations:
+    - name: UNSW Sydney
+  family_name: Ma
+  given_name: Shaoxiu
+  identifiers: 
+  - identifier: https://orcid.org/0000-0002-3357-4647
+    scheme: orcid
+- affiliations:
+    - name: UNSW Sydney
+  family_name: Menviel
+  given_name: Laurie
+  identifiers: 
+  - identifier: https://orcid.org/0000-0002-5068-1591
+    scheme: orcid
+- affiliations:
+    - name: Australian National University
+  family_name: Mondal
+  given_name: Mainak
+  identifiers: 
+  - identifier: https://orcid.org/0000-0002-2730-5686
+    scheme: orcid
+- affiliations:
+    - name: Monash University
+  family_name: Neske
+  given_name: Sonja
+  identifiers: 
+  - identifier: https://orcid.org/0000-0001-8970-4589
+    scheme: orcid
+- affiliations:
+    - name: University of Melbourne
+  family_name: Norton
+  given_name: Alexander
+  identifiers: 
+  - identifier: https://orcid.org/0000-0001-7708-3914
+    scheme: orcid
+- affiliations:
+    - name: University of Tasmania
+  family_name: Oliver
+  given_name: Eric
+  identifiers: 
+  - identifier: https://orcid.org/0000-0002-4006-2826
+    scheme: orcid
+- affiliations:
+    - name: University of Tasmania
+  family_name: Petrelli
+  given_name: Paola
+  identifiers: 
+  - identifier: https://orcid.org/0000-0002-0164-5105
+    scheme: orcid
+- affiliations:
+    - name: UNSW Sydney
+  family_name: Prasad
+  given_name: Abhnil
+  identifiers: 
+  - identifier: https://orcid.org/0000-0003-3336-7338
+    scheme: orcid
+- affiliations:
+    - name: UNSW Sydney
+  family_name: Purich
+  given_name: Ariaan
+  identifiers: 
+  - identifier: https://orcid.org/0000-0003-2248-5937
+    scheme: orcid
+- affiliations:
+    - name: Monash University
+  family_name: Ramsay
+  given_name: Hamish
+  identifiers: 
+  - identifier: https://orcid.org/0000-0002-4606-9615
+    scheme: orcid
+- affiliations:
+    - name: Monash University
+  family_name: Santra
+  given_name: Abhik
+  identifiers: 
+  - identifier: https://orcid.org/0000-0002-6533-367X
+    scheme: orcid
+- affiliations:
+    - name: Australian National University
+  family_name: Shakespeare
+  given_name: Callum
+  identifiers: 
+  - identifier: https://orcid.org/0000-0002-8109-0751
+    scheme: orcid
+- affiliations:
+    - name: University of Tasmania
+  family_name: Spence
+  given_name: Paul
+  identifiers: 
+  - identifier: https://orcid.org/0000-0001-5156-2204
+    scheme: orcid
+- affiliations:
+    - name: UNSW Sydney
+  family_name: Taschetto
+  given_name: Andrea
+  identifiers: 
+  - identifier: https://orcid.org/0000-0001-6020-1603
+    scheme: orcid
+- affiliations:
+    - name: UNSW Sydney
+  family_name: Ukkola
+  given_name: Anna
+  identifiers: 
+  - identifier: https://orcid.org/0000-0003-1207-3146
+    scheme: orcid
+- affiliations:
+    - name: University of Melbourne
+  family_name: Vincent
+  given_name: Claire
+  identifiers: 
+  - identifier: https://orcid.org/0000-0001-5315-1644
+    scheme: orcid
+- affiliations:
+    - name: Australian National University
+  family_name: Vreugdenhil
+  given_name: Catherine
+  identifiers: 
+  - identifier: https://orcid.org/0000-0002-1808-6274
+    scheme: orcid
+- affiliations:
+    - name: University of Melbourne
+  family_name: Wales
+  given_name: Scott
+  identifiers: 
+  - identifier: https://orcid.org/0000-0002-0583-9601
+    scheme: orcid
+- affiliations:
+    - name: University of Melbourne
+  family_name: Walsh
+  given_name: Kevin
+  identifiers: 
+  - identifier: https://orcid.org/0000-0002-1860-510X
+    scheme: orcid
+- affiliations:
+    - name: Monash University
+  family_name: Wolff
+  given_name: Holger
+  identifiers: 
+  - identifier: https://orcid.org/NA
+    scheme: orcid
+- affiliations:
+    - name: Monash University
+  family_name: Zeller
+  given_name: Mathias
+  identifiers: 
+  - identifier: https://orcid.org/0000-0003-1911-7500
+    scheme: orcid

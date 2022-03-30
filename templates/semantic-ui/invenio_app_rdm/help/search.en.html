@@ -15,8 +15,6 @@
     This guide explains how to write advanced search queries using easy
     to understand examples.
   </p>
-  <h3>Simple search (one or multiple terms)</h3>
-  <p>
     <strong>Example:</strong>
     <a href="/search?page=1&amp;size=20&amp;q=temperature%20evaporation"
       ><code>temperature evaporation</code></a
@@ -109,19 +107,18 @@
   <p>
     <strong>Example:</strong>
     <a
-      href="/search?page=1&amp;size=20&amp;q=metadata.dates:%5B2017%20TO%202018%5D"
-      ><code>metadata.dates:[2017 TO 2018]</code></a
-    >
+      href="/search?page=1&amp;size=20&amp;q=metadata.dates.date:[1980 TO 1990] AND metadata.dates.type.id:from-date"
+      ><code>metadata.dates.date:[1980 TO 1990] AND metadata.dates.type.id:from-date</code></a>
     (note, you must capitalize <code>TO</code>).
   </p>
   <p>
-    Results will match any record with a <..> date between 2017-01-01 and
-    2018-01-01 (both dates inclusive).
+    Results will match any record with a <coverage_from> date between 1980-01-01 and
+    1990-01-01 (both dates inclusive).
   </p>
   <p>Note that, partial dates are expanded to full dates, e.g.:</p>
   <ul>
-    <li>2017 is expanded to 2017-01-01</li>
-    <li>2017-06 is expanded to 2017-06-01</li>
+    <li>1980 is expanded to 1980-01-01</li>
+    <li>1980-06 is expanded to 1980-06-01</li>
   </ul>
   <p>
     Use square brackets (<code>[]</code>) for <em>inclusive</em> ranges and use
@@ -129,20 +126,70 @@
   </p>
   <ul>
     <li>
-      <code>[2017 TO 2018}</code> is equivalent to
-      <code>[2017-01-01 TO 2017-12-31]</code> because of date expansion and
+      <code>[1970 TO 1980}</code> is equivalent to
+      <code>[1970-01-01 TO 1979-12-31]</code> because of date expansion and
       exclusive upper bound.
     </li>
   </ul>
-  <p>Examples of other ranges:</p>
+  <p>Selecting all records including data in temporal range</p>
+  <p>
+     The portal uses a `coverage` type of date (from-date/to-date) to indicate the temporal range covered by a dataset.
+    To select all records that cover the entire period between two dates, for example from 1990 to 2000, the `coverage` needs to satisfy 3 conditions:
   <ul>
     <li>
-      <code>metadata.publication_date:{* TO 2017-01-01}</code>: All days until 2017.
-    </li>
-    <li>
-      <code>metadata.publication_date:[2017-01-01 TO *]</code>: All days from 2017.
+     <p>date of type `coverage`</p>
+     <p>date containing a date <= 1990</p>
+     <p>date containing a date >= 2000</p>
     </li>
   </ul>
+  </p>
+  <ul>
+    <li>
+    <a
+      href="/search?page=1&amp;size=20&amp;q=(metadata.dates.date:{* TO 1990} AND metadata.dates.type.id:from-date) AND (metadata.dates.date:{2000 TO *} AND metadata.dates.type.id:to-date)"
+      ><code>(metadata.dates.date:{* TO 1990} AND metadata.dates.type.id:from-date) AND (metadata.dates.date:{2000 TO *} AND metadata.dates.type.id:to-date)</code></a: All days until 1990 for from-date and all days from 2000 for to-date.
+    >
+    </li>
+    <li>
+    <a
+      href="/search?page=1&amp;size=20&amp;q=metadata.dates.date:({* TO 1990] AND [2000 TO *}) AND metadata.dates.type.id:coverage"
+      ><code>metadata.dates.date:({* TO 1990] AND [2000 TO *}) AND metadata.dates.type.id:coverage</code></a: All days until 1990 for from-date and all days from 2000 for to-date.
+    >
+    </li>
+  </ul>
+  <p>
+    To select all records that have some data in the selected period, the interval boundaries are swapped:
+  <ul>
+    <li>
+     <p>date of type `coverage`</p>
+     <p>date containing a date <= 2000</p>
+     <p>date containing a date >= 1990</p>
+    </li>
+  </ul>
+  </p>
+  <ul>
+    <li>
+    <a
+      href="/search?page=1&amp;size=20&amp;q=metadata.dates.date:({* TO 2000] AND [1990 TO *}) AND metadata.dates.type.id:coverage"
+      ><code>metadata.dates.date:({* TO 2000] AND [1990 TO *}) AND metadata.dates.type.id:coverage</code></a: All days until 2000 for from-date and all days from 1990 for to-date.
+    >
+    </li>
+  </ul>
+  <h3>Ranking/Sorting</h3>
+  <p>
+    By default all searches are sorted according to an internal ranking
+    algorithm that scores each match against your query. In both the user
+    interface and REST API, it's possible to sort the results by:
+  </p>
+  <ul>
+    <li>Most recent</li>
+    <li>Best match</li>
+  </ul>
+  <h3>Regular expressions</h3>
+  <p>
+    Regular expressions are a powerful pattern matching language that allow to
+    search for specific patterns in a field. For instance if we wanted to find
+    all records with a DOI-prefix 10.5281 we could use a regular expression
   <h3>Ranking/Sorting</h3>
   <p>
     By default all searches are sorted according to an internal ranking
@@ -254,4 +301,20 @@
     Wildcard searches can be slow and should normally be avoided if possible.
   </p>
 </div>
+  <h3>Query returns no matches even when expected!</h3>
+  <p>
+    This can happen because you used the wrong syntax, the query will say it couldn't find any matching records in such case rather than pointing out the issue.
+  </p>
+  <p>
+    <strong>Example:</strong>
+    <a href="/search?page=1&amp;size=20&amp;q=metadata.titles=!WRF"
+      ><code>metadata.titles=!WRF</code></a
+    >
+  </p>
+  <p>
+    Here I'm looking for `titles` that doesn't exists in the schema and instead of using `:` to find titles that don't contain `WRF` I'm using `=!` which is not a valid syntax.
+  </p>
+    <p>
+    If using booleans as AND / OR as long as one of the query has correct syntax and matches you will get some result even if the other side of the query is not getting evaluated because the syntax is wrong
+  </p>
 {%- endblock page_body%}

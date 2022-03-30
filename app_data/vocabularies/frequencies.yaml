@@ -1,4 +1,4 @@
-﻿- id: sub-30-min
+﻿- id: sub-30-min 
   scheme: "frequency"
   subject: "sub 30-min"
 - id: 30-min 
@@ -19,9 +19,9 @@
 - id: day
   scheme: "frequency"
   subject: "Daily"
-- id: week 
+- id: day-month 
   scheme: "frequency"
-  subject: "Weekly"
+  subject: "1-day to 1-mon"
 - id: mon
   scheme: "frequency"
   subject: "Monthly"
@@ -31,6 +31,9 @@
 - id: year
   scheme: "frequency"
   subject: "Annual"
+- id: multi-year
+  scheme: "frequency"
+  subject: "Multi Annual"
 - id: decad 
   scheme: "frequency"
   subject: "Decadal"
@@ -52,9 +55,15 @@
 - id: clim-year 
   scheme: "frequency"
   subject: "Annual Climatology"
+- id: multi-year-clim
+  scheme: "frequency"
+  subject: "Multi Annual Climatology"
 - id: clim-normal
   scheme: "frequency"
   subject: "Climate Normal (30-year climatology)"
 - id: event 
   scheme: "frequency"
   subject: "Event based"
+- id: irregular 
+  scheme: "frequency"
+  subject: "Irregular"

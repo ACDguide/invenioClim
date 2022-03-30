@@ -23,6 +23,12 @@ descriptiontypes:
 languages:
   pid-type: lng 
   data-file: vocabularies/languages.yaml
+names:
+  pid-type: names
+  data-file: vocabularies/names_orcid.yaml
+relationtypes:
+  pid-type: rlt
+  data-file: vocabularies/relation_types.yaml
 subjects:
   pid-type: sub
   schemes:
@@ -42,6 +48,9 @@ subjects:
     - id: resolution 
       name: ACDGuide approximate horizontal resolutions
       data-file: vocabularies/horizontal_res.yaml
-    - id: variable 
-      name: ACDGuide variables
-      data-file: vocabularies/variables.yaml
+#    - id: variable 
+#      name: ACDGuide variables
+#      data-file: vocabularies/variables.yaml
+    - id: format 
+      name: ACDGuide file formats
+      data-file: vocabularies/file_formats.yaml
