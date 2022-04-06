@@ -27,10 +27,10 @@
   </dl>
   {% endif %}
 
-  {%- for scheme, terms in subjects|selectattr("scheme")|groupby('scheme')|sort(attribute='scheme') %}
-  <dl class="details-list subjects" aria-label="{{ _('Keywords') }}">
+  {%- for scheme, subjects in subjects|selectattr("scheme")|groupby('scheme')|sort(attribute='scheme') %}
+  <dl class="details-list subjects" aria-label="{{ _('Subjects') }}">
     <dt class="ui tiny header">{{scheme}}</dt>
-    {%- for subject in terms %}
+    {%- for subject in subjects %}
     <dd>
       <a href='/search?q=metadata.subjects.subject:"{{ subject.subject }}"'
          class="subject"

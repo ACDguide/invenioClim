@@ -47,76 +47,62 @@
   </p>
   <p>
     <strong>Examples:</strong>
-    <a href="/search?page=1&amp;size=20&amp;q=-cmip20%2Bmodel"
-      ><code>-cmip +model</code></a
+    <a href="/search?page=1&amp;size=20&amp;q=-open%20%2Bscience"
+      ><code>-open +science</code></a
     >
     or
-    <a href="/search?page=1&amp;size=20&amp;q=NOT%20cmip%20AND%20model"
-      ><code>NOT cmip AND model</code></a
+    <a href="/search?page=1&amp;size=20&amp;q=NOT%20open%20AND%20science"
+      ><code>NOT open AND science</code></a
     >
   </p>
   <h3>Phrase search</h3>
   <p>
     <strong>Example:</strong>
-    <a href="/search?page=1&amp;size=20&amp;q=%22model%20output%22"
-      ><code>"model output"</code></a
+    <a href="/search?page=1&amp;size=20&amp;q=%22open%20science%22"
+      ><code>"open science"</code></a
     >
   </p>
   <p>
     Results will match records with the <em>phrase</em>
-    <code>model output</code> in <em>any field</em>.
+    <code>open science</code> in <em>any field</em>.
   </p>
   <h3>Field search</h3>
   <p>
     <strong>Example:</strong>
-    <a href="/search?page=1&amp;size=20&amp;q=metadata.title:Australia"
-      ><code>metadata.title:Australia</code></a
+    <a href="/search?page=1&amp;size=20&amp;q=metadata.title:open"
+      ><code>metadata.title:open</code></a
     >
   </p>
   <p>
-    Results will match records with the <em>term</em> <code>Australia</code> in the
+    Results will match records with the <em>term</em> <code>open</code> in the
     <em>field</em> <code>metadata.title</code>. If you want to search for multiple terms
     in the title you must <strong>group the terms</strong> using parenthesis:
   </p>
   <p>
     <strong>Example:</strong>
-    <a href="/search?page=1&amp;size=20&amp;q=metadata.title:(Australia%20temperature%29"
-      ><code>metadata.title:(Australia temperature)</code></a
+    <a href="/search?page=1&amp;size=20&amp;q=metadata.title:(open%20science%29"
+      ><code>metadata.title:(open science)</code></a
     >
   </p>
   <p>
     See the field reference below for the full list of fields you can search.
   </p>
-  <h3>Querying using keywords</h3>
-  <p>
-    Records be also selected by keywords. There are several categories:
-  <ul>
-    <li>ANZSRC Field Of Research codes (2020)</li>
-    <li>Regions: includes only main continents and oceans</li>
-    <li>Temporal frequency</li>
-    <li>Horizontal resolution</li>
-    <li>Realms: can be used to select groups of variables, i.e. Biogeochemistry</li>
-    <li>Resource types: this is a special category and is not optional</li>
-  </ul>
-    While all but `resource type` are optional we try to apply them whenever applicable. Each category has pre-defined terms provided by vocabularies.
-  <p>
-    The vocabularies are accessible <a href="">here</a>.
-  </p>
-  <p>
-    Every time a query is run a list of relevant keywords is displayed on the side of the returned results.
-    Specific keywrods can be un/checked to further subset the query results. 
-  </p>
   <h3>Combined simple, phrase or field search</h3>
   <p>
     <strong>Example:</strong>
     <a
-      href="/search?page=1&amp;size=20&amp;q=%2Bmetadata.title:%22radar%20observation%22%20-metadata.title:Australia"
-      ><code>+metadata.title:"radar observation" -metadata.title:Australia</code></a
+      href="/search?page=1&amp;size=20&amp;q=%2Bmetadata.title:%22open%20science%22%20-metadata.title:policy"
+      ><code>+metadata.title:"open science" -metadata.title:policy</code></a
     >
     or e.g.
-    <a href="/search?page=1&amp;size=20&amp;q=metadata.title:(-wind%20%2Bradar%29"
-      ><code>metadata.title:(-wind +radar)</code></a
-
+    <a href="/search?page=1&amp;size=20&amp;q=metadata.title:(-open%20%2Bscience%29"
+      ><code>metadata.title:(-open +science)</code></a
+    >
+  </p>
+  <p>
+    You can combine simple, phrase and field search to construct advanced search
+    queries.
+  </p>
   <h3>Range search</h3>
   <p>
     <strong>Example:</strong>
