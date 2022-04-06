@@ -12,7 +12,7 @@
   props:
     datacite: Other
   title:
-    en: Citation and access information
+    en: Access information
 - id: technical-info
   props:
     datacite: TechnicalInfo
