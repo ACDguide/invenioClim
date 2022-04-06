@@ -455,3 +455,24 @@
   identifiers: 
   - identifier: https://orcid.org/0000-0003-1911-7500
     scheme: orcid
+- affiliations:
+    - name: Commonwealth Scientific and Industrial Research Organisation 
+  family_name: Hemer 
+  given_name: Mark
+  identifiers: 
+  - identifier: https://orcid.org/0000-0002-7725-3474
+    scheme: orcid
+- affiliations:
+    - name: Bureau of Meteorology 
+  family_name: Smith
+  given_name: Grant 
+  identifiers: 
+  - identifier: https://orcid.org/0000-0003-4692-6565
+    scheme: orcid
+- affiliations:
+    - name: Bureau of Meteorology 
+  family_name: Greenslade 
+  given_name: Diana
+  identifiers: 
+  - identifier: https://orcid.org/0000-0001-6644-1878
+    scheme: orcid

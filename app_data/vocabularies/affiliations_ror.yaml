@@ -1,12 +1,5 @@
-- acronym: ANU
-  id: 019wvm592
-  identifiers:
-  - identifier: 019wvm592
-    scheme: ror
-  name: Australian National University
-  title:
-    en: Australian National University
-- id: 02bfwt286
+- acronym: Monash
+  id: 02bfwt286
   identifiers:
   - identifier: 02bfwt286
     scheme: ror
@@ -21,7 +14,8 @@
   name: University of Queensland
   title:
     en: University of Queensland
-- id: 01sf06y89
+- acronym: Macquaire
+  id: 01sf06y89
   identifiers:
   - identifier: 01sf06y89
     scheme: ror
@@ -36,7 +30,8 @@
   name: UNSW Sydney
   title:
     en: UNSW Sydney
-- id: 01kj2bm70
+- acronym:
+  id: 01kj2bm70
   identifiers:
   - identifier: 01kj2bm70
     scheme: ror
@@ -51,7 +46,8 @@
   name: University of Wollongong
   title:
     en: University of Wollongong
-- id: 01ej9dk98
+- acronym: UniMelb
+  id: 01ej9dk98
   identifiers:
   - identifier: 01ej9dk98
     scheme: ror
@@ -66,7 +62,8 @@
   name: University of Tasmania
   title:
     en: University of Tasmania
-- id: 00892tw58
+- acronym: Adelaide
+  id: 00892tw58
   identifiers:
   - identifier: 00892tw58
     scheme: ror
@@ -97,7 +94,8 @@
   name: University of Sydney
   title:
     en: University of Sydney
-- id: 01kpzv902
+- acronym: Flinders
+  id: 01kpzv902
   identifiers:
   - identifier: 01kpzv902
     scheme: ror
@@ -144,7 +142,8 @@
   name: RMIT University
   title:
     en: RMIT University
-- id: 01rxfrp27
+- acronym: LaTrobe
+  id: 01rxfrp27
   identifiers:
   - identifier: 01rxfrp27
     scheme: ror
@@ -167,14 +166,16 @@
   name: University of New England
   title:
     en: University of New England
-- id: 02czsnj07
+- acronym: Deakin
+  id: 02czsnj07
   identifiers:
   - identifier: 02czsnj07
     scheme: ror
   name: Deakin University
   title:
     en: Deakin University
-- id: 02sc3r913
+- acronym: Griffith
+  id: 02sc3r913
   identifiers:
   - identifier: 02sc3r913
     scheme: ror
@@ -197,21 +198,24 @@
   name: Queensland University of Technology
   title:
     en: Queensland University of Technology
-- id: 00r4sry34
+- acronym: Murdoch
+  id: 00r4sry34
   identifiers:
   - identifier: 00r4sry34
     scheme: ror
   name: Murdoch University
   title:
     en: Murdoch University
-- id: 01p93h210
+- acronym: UniSA
+  id: 01p93h210
   identifiers:
   - identifier: 01p93h210
     scheme: ror
   name: University of South Australia
   title:
     en: University of South Australia
-- id: 031rekg67
+- acronym: Swinburne
+  id: 031rekg67
   identifiers:
   - identifier: 031rekg67
     scheme: ror
@@ -234,14 +238,16 @@
   name: Southern Cross University
   title:
     en: Southern Cross University
-- id: 02n415q13
+- acronym: Curtin
+  id: 02n415q13
   identifiers:
   - identifier: 02n415q13
     scheme: ror
   name: Curtin University
   title:
     en: Curtin University
-- id: 006jxzx88
+- acronym: Bond
+  id: 006jxzx88
   identifiers:
   - identifier: 006jxzx88
     scheme: ror
@@ -280,7 +286,8 @@
   name: University of Canberra
   title:
     en: University of Canberra
-- id: 05qbzwv83
+- acronym: Federation
+  id: 05qbzwv83
   identifiers:
   - identifier: 05qbzwv83
     scheme: ror
@@ -323,6 +330,30 @@
   id: 056naxb15
   identifiers:
   - identifier: 056naxb15
+    scheme: ror
   name: Commonwealth Department of Industry, Science, Energy and Resources
   title:
     en: Commonwealth Department of Industry, Science, Energy and Resources
+- acronym: NCI
+  id: 04yx6dh41
+  identifiers:
+  - identifier: 04yx6dh41
+  name: NCI Australia
+  title:
+    en: National Computational Infrastructure Australia
+- acronym: ANU
+  id: 019wvm592
+  identifiers:
+  - identifier: 019wvm592
+    scheme: ror
+  name: Australian National University
+  title:
+    en: Australian National University
+- acronym: CLEX
+  id: 04yx6dh82
+  identifiers:
+  - identifier: 04yx6dh82
+    scheme: ror
+  name: ARC Centre of Excellence for Climate Extremes
+  title:
+    en: ARC Centre of Excellence for Climate Extremes 
