@@ -8,7 +8,7 @@
     openaire_type: dataset
     eurepo: info:eu-repo/semantics/other
     schema.org: https://schema.org/Dataset
-    subtype: ''
+    subtype: '' 
     type: dataset
   title:
     en: Dataset
@@ -42,7 +42,7 @@
     openaire_type: dataset
     eurepo: info:eu-repo/semantics/other
     schema.org: https://schema.org/Dataset
-    subtype: dataset-reanalysis
+    subtype: dataset-reanalysis 
     type: dataset
   title:
     en: Dataset - reanalysis
@@ -83,7 +83,7 @@
   tags:
     - depositable
     - linkable
-- id: dataset-obs-other
+- id: dataset-obs
   icon: table
   props:
     csl: dataset
@@ -93,14 +93,14 @@
     openaire_type: dataset
     eurepo: info:eu-repo/semantics/other
     schema.org: https://schema.org/Dataset
-    subtype: dataset-insitu 
+    subtype: dataset-obs 
     type: dataset
   title:
     en: Dataset - Other observations 
   tags:
     - depositable
     - linkable
-- id: collection
+- id: dataset-collection
   icon: table
   props:
     csl: dataset
@@ -110,78 +110,10 @@
     openaire_type: dataset
     eurepo: info:eu-repo/semantics/other
     schema.org: https://schema.org/Dataset
-    subtype: ''
+    subtype: dataset-collection 
     type: dataset
   title:
     en: Data Collection 
-  tags:
-    - depositable
-    - linkable
-- id: collection-model
-  icon: table
-  props:
-    csl: dataset
-    datacite_general: Collection 
-    datacite_type: ''
-    openaire_resourceType: '21'
-    openaire_type: dataset
-    eurepo: info:eu-repo/semantics/other
-    schema.org: https://schema.org/Dataset
-    subtype: collection-model 
-    type: dataset
-  title:
-    en: Collection - model output
-  tags:
-    - depositable
-    - linkable
-- id: collection-reanalysis
-  icon: table
-  props:
-    csl: dataset
-    datacite_general: Collection 
-    datacite_type: ''
-    openaire_resourceType: '21'
-    openaire_type: dataset
-    eurepo: info:eu-repo/semantics/other
-    schema.org: https://schema.org/Dataset
-    subtype: collection-model 
-    type: dataset
-  title:
-    en: Collection - reanalysis
-  tags:
-    - depositable
-    - linkable
-- id: collection-obs
-  icon: table
-  props:
-    csl: dataset
-    datacite_general: Collection 
-    datacite_type: ''
-    openaire_resourceType: '21'
-    openaire_type: dataset
-    eurepo: info:eu-repo/semantics/other
-    schema.org: https://schema.org/Dataset
-    subtype: collection-insitu 
-    type: dataset
-  title:
-    en: Collection - Observations 
-  tags:
-    - depositable
-    - linkable
-- id: collection-sat
-  icon: table
-  props:
-    csl: dataset
-    datacite_general: Collection 
-    datacite_type: ''
-    openaire_resourceType: '21'
-    openaire_type: dataset
-    eurepo: info:eu-repo/semantics/other
-    schema.org: https://schema.org/Dataset
-    subtype: collection-sat 
-    type: dataset
-  title:
-    en: Collection - Satellite 
   tags:
     - depositable
     - linkable
@@ -195,7 +127,7 @@
     openaire_type: software
     eurepo: info:eu-repo/semantics/other
     schema.org: https://schema.org/SoftwareSourceCode
-    subtype: ''
+    subtype: '' 
     type: software
   title:
     en: Software
@@ -212,7 +144,7 @@
     openaire_type: software
     eurepo: info:eu-repo/semantics/other
     schema.org: https://schema.org/SoftwareSourceCode
-    subtype: 'notebook'
+    subtype: software-notebook
     type: software
   title:
     en: Computational notebook
@@ -229,7 +161,7 @@
     openaire_type: software
     eurepo: info:eu-repo/semantics/other
     schema.org: https://schema.org/SoftwareSourceCode
-    subtype: 'model'
+    subtype: software-model
     type: software
   title:
     en: Computational model
@@ -246,14 +178,14 @@
     openaire_type: software
     eurepo: info:eu-repo/semantics/other
     schema.org: https://schema.org/SoftwareSourceCode
-    subtype: 'workflow'
+    subtype: software-workflow
     type: software
   title:
     en: Workflow
   tags:
     - depositable
     - linkable
-- id: collection-software
+- id: software-collection
   icon: code
   props:
     csl: software
@@ -263,7 +195,7 @@
     openaire_type: software
     eurepo: info:eu-repo/semantics/other
     schema.org: https://schema.org/SoftwareSourceCode
-    subtype: ''
+    subtype: software-collection 
     type: software
   title:
     en: Software collection
@@ -317,7 +249,7 @@
     subtype: service-web 
     type: service
   title:
-    en: Website/Wiki
+    en: Online documentation
   tags:
     - depositable
     - linkable
@@ -331,11 +263,12 @@
     openaire_type: publication
     eurepo: info:eu-repo/semantics/other
     schema.org: https://schema.org/CreativeWork
-    subtype: ''
+    subtype: '' 
     type: metadata 
   title:
     en: Metadata record
   tags:
+    - depositable
     - linkable
 - id: standard 
   icon: file alternate
@@ -347,7 +280,7 @@
     openaire_type: publication
     eurepo: info:eu-repo/semantics/other
     schema.org: https://schema.org/CreativeWork
-    subtype: ''
+    subtype: '' 
     type: standard 
   title:
     en: Standard
@@ -364,7 +297,7 @@
     openaire_type: publication
     eurepo: info:eu-repo/semantics/other
     schema.org: https://schema.org/Event
-    subtype: ''
+    subtype: '' 
     type: event 
   title:
     en: Event
@@ -686,7 +619,7 @@
     openaire_type: publication
     eurepo: info:eu-repo/semantics/conferencePoster
     schema.org: https://schema.org/CreativeWork
-    subtype: ''
+    subtype: '' 
     type: poster
   title:
     en: Poster
@@ -702,7 +635,7 @@
     openaire_type: publication
     eurepo: info:eu-repo/semantics/lecture
     schema.org: https://schema.org/PresentationDigitalDocument
-    subtype: ''
+    subtype: '' 
     type: presentation
   title:
     en: Presentation
@@ -862,7 +795,7 @@
     openaire_type: other
     eurepo: info:eu-repo/semantics/other
     schema.org: https://schema.org/CreativeWork
-    subtype: ''
+    subtype: '' 
     type: other
   title:
     en: Other
