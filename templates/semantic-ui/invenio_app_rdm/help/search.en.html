@@ -13,12 +13,11 @@
   <h1>Search guide</h1>
   <p>
     This guide explains how to write advanced search queries using easy
-    to understand examples.
+    to understand examples. Click on the examples to see the queries' results.
   </p>
     <strong>Example:</strong>
     <a href="/search?page=1&amp;size=20&amp;q=temperature%20evaporation"
-      ><code>temperature evaporation</code></a
-    >
+      ><code>temperature evaporation</code></a>
   </p>
   <p>
     Results will match records with the <em>terms</em> <code>temperature</code>
@@ -34,55 +33,48 @@
   <p>
     <strong>Examples:</strong>
     <a href="/search?page=1&amp;size=20&amp;q=%2Btemperature%20%2Bevaporation"
-      ><code>+temperature +evaporation</code></a
-    >
+      ><code>+temperature +evaporation</code></a>
     or
     <a href="/search?page=1&amp;size=20&amp;q=temperature%20AND%20evaporation"
-      ><code>temperature AND evaporation</code></a
-    >
+      ><code>temperature AND evaporation</code></a>
   </p>
   <p>
     You can require <em>absence</em> of one or more terms using either the
-    <code>-</code> or <code>NOT</code> operator:
+    <code>-</code> or <code>NOT</code> operator, for example if you want `temperature` data but excluding CMIP related results:
   </p>
   <p>
     <strong>Examples:</strong>
-    <a href="/search?page=1&amp;size=20&amp;q=-open%20%2Bscience"
-      ><code>-open +science</code></a
-    >
+    <a href="/search?page=1&amp;size=20&amp;q=-CMIP%20%2Btemperature"
+      ><code>-CMIP +temperature</code></a>
     or
-    <a href="/search?page=1&amp;size=20&amp;q=NOT%20open%20AND%20science"
-      ><code>NOT open AND science</code></a
-    >
+    <a href="/search?page=1&amp;size=20&amp;q=NOT%20CMIP%20AND%20temperature"
+      ><code>NOT CMIP AND temperature</code></a>
   </p>
   <h3>Phrase search</h3>
   <p>
     <strong>Example:</strong>
-    <a href="/search?page=1&amp;size=20&amp;q=%22open%20science%22"
-      ><code>"open science"</code></a
+    <a href="/search?page=1&amp;size=20&amp;q=%22land%20surface%22"><code>"land surface"</code></a
     >
   </p>
   <p>
     Results will match records with the <em>phrase</em>
-    <code>open science</code> in <em>any field</em>.
+    <code>land surface</code> in <em>any field</em>.
   </p>
   <h3>Field search</h3>
   <p>
     <strong>Example:</strong>
-    <a href="/search?page=1&amp;size=20&amp;q=metadata.title:open"
-      ><code>metadata.title:open</code></a
-    >
+    <a href="/search?page=1&amp;size=20&amp;q=metadata.title:precipitation"
+      ><code>metadata.title:precipitation</code></a>
   </p>
   <p>
-    Results will match records with the <em>term</em> <code>open</code> in the
+    Results will match records with the <em>term</em> <code>precipitation</code> in the
     <em>field</em> <code>metadata.title</code>. If you want to search for multiple terms
     in the title you must <strong>group the terms</strong> using parenthesis:
   </p>
   <p>
     <strong>Example:</strong>
-    <a href="/search?page=1&amp;size=20&amp;q=metadata.title:(open%20science%29"
-      ><code>metadata.title:(open science)</code></a
-    >
+    <a href="/search?page=1&amp;size=20&amp;q=metadata.title:(precipitation%20rainfall%29"
+      ><code>metadata.title:(precipitation rainfall)</code></a>
   </p>
   <p>
     See the field reference below for the full list of fields you can search.
@@ -91,9 +83,8 @@
   <p>
     <strong>Example:</strong>
     <a
-      href="/search?page=1&amp;size=20&amp;q=%2Bmetadata.title:%22open%20science%22%20-metadata.title:policy"
-      ><code>+metadata.title:"open science" -metadata.title:policy</code></a
-    >
+      href="/search?page=1&amp;size=20&amp;q=%2Bmetadata.title:%22land%20surface%22%20-metadata.title:monthly"
+      ><code>+metadata.title:"land surface" -metadata.title:monthly</code></a>
     or e.g.
     <a href="/search?page=1&amp;size=20&amp;q=metadata.title:(-open%20%2Bscience%29"
       ><code>metadata.title:(-open +science)</code></a
@@ -107,7 +98,7 @@
   <p>
     <strong>Example:</strong>
     <a
-      href="/search?page=1&amp;size=20&amp;q=metadata.dates.date:[1980 TO 1990] AND metadata.dates.type.id:from-date"
+      href="/search?page=1&amp;size=20&amp;q=metadata.publication_date:%5B2019%20TO%202021-06%5D"
       ><code>metadata.dates.date:[1980 TO 1990] AND metadata.dates.type.id:from-date</code></a>
     (note, you must capitalize <code>TO</code>).
   </p>
@@ -131,32 +122,30 @@
       exclusive upper bound.
     </li>
   </ul>
-  <p>Selecting all records including data in temporal range</p>
+  <h3>Selecting records including data in a given temporal range</h3>
   <p>
-     The portal uses a `coverage` type of date (from-date/to-date) to indicate the temporal range covered by a dataset.
-    To select all records that cover the entire period between two dates, for example from 1990 to 2000, the `coverage` needs to satisfy 3 conditions:
+     The portal uses a <code>coverage</code> date_type to indicate the temporal range covered by a dataset. Coverage is composed by a <code>from-date/to-date</code> pair.
+    To select the records that cover the entire period between two dates, for example from 1990 to 2000, coverage needs to satisfy 3 conditions:
   <ul>
+    <li>date of type <code>coverage</code></li>
+    <li>range containing a date <= 1990</li>
+    <li>range containing a date >= 2000</li>
+  </ul>
+  </p>
+  <p>
+  <strong>Example:</strong>	    
+  <ul>
+    <li><a
+       href="/search?page=1&amp;size=20&amp;q=range%3A%7Bmetadata.dates.date%7Bgte%3A1990%2C+lte%3A2000%2C+relation%3A%22contains%22%7D%7D+AND+metadata.dates.type.id%3Acoverage"
+      ><code>range:{metadata.dates.date{gte:1990, lte:2000, relation:"contains"}} AND metadata.dates.type.id:coverage)</code></a: Testing relation.>
+    </li>
     <li>
-     <p>date of type `coverage`</p>
-     <p>date containing a date <= 1990</p>
-     <p>date containing a date >= 2000</p>
+    <a
+      href="/search?page=1&amp;size=20&amp;q=metadata.dates.date%3A%28%7B*+TO+1990%5D+AND+%5B2000+TO+*%7D%29+AND+metadata.dates.type.id%3Acoverage"
+      ><code>metadata.dates.date:({* TO 1990] AND [2000 TO *}) AND metadata.dates.type.id:coverage</code></a: All days until 1990 for from-date and all days from 2000 for to-date.>
     </li>
   </ul>
   </p>
-  <ul>
-    <li>
-    <a
-      href="/search?page=1&amp;size=20&amp;q=(metadata.dates.date:{* TO 1990} AND metadata.dates.type.id:from-date) AND (metadata.dates.date:{2000 TO *} AND metadata.dates.type.id:to-date)"
-      ><code>(metadata.dates.date:{* TO 1990} AND metadata.dates.type.id:from-date) AND (metadata.dates.date:{2000 TO *} AND metadata.dates.type.id:to-date)</code></a: All days until 1990 for from-date and all days from 2000 for to-date.
-    >
-    </li>
-    <li>
-    <a
-      href="/search?page=1&amp;size=20&amp;q=metadata.dates.date:({* TO 1990] AND [2000 TO *}) AND metadata.dates.type.id:coverage"
-      ><code>metadata.dates.date:({* TO 1990] AND [2000 TO *}) AND metadata.dates.type.id:coverage</code></a: All days until 1990 for from-date and all days from 2000 for to-date.
-    >
-    </li>
-  </ul>
   <p>
     To select all records that have some data in the selected period, the interval boundaries are swapped:
   <ul>
@@ -170,9 +159,8 @@
   <ul>
     <li>
     <a
-      href="/search?page=1&amp;size=20&amp;q=metadata.dates.date:({* TO 2000] AND [1990 TO *}) AND metadata.dates.type.id:coverage"
-      ><code>metadata.dates.date:({* TO 2000] AND [1990 TO *}) AND metadata.dates.type.id:coverage</code></a: All days until 2000 for from-date and all days from 1990 for to-date.
-    >
+      href="/search?page=1&amp;size=20&amp;q=metadata.dates.date%3A%28%7B*+TO+2000%5D+AND+%5B1990+TO+*%7D%29+AND+metadata.dates.type.id%3Acoverage"
+      ><code>metadata.dates.date:({* TO 2000] AND [1990 TO *}) AND metadata.dates.type.id:coverage</code></a: All days until 2000 for from-date and all days from 1990 for to-date.>
     </li>
   </ul>
   <h3>Ranking/Sorting</h3>
@@ -189,37 +177,20 @@
   <p>
     Regular expressions are a powerful pattern matching language that allow to
     search for specific patterns in a field. For instance if we wanted to find
-    all records with a DOI-prefix 10.5281 we could use a regular expression
-  <h3>Ranking/Sorting</h3>
-  <p>
-    By default all searches are sorted according to an internal ranking
-    algorithm that scores each match against your query. In both the user
-    interface and REST API, it's possible to sort the results by:
-  </p>
-  <ul>
-    <li>Most recent</li>
-    <li>Best match</li>
-  </ul>
-  <h3>Regular expressions</h3>
-  <p>
-    Regular expressions are a powerful pattern matching language that allow to
-    search for specific patterns in a field. For instance if we wanted to find
-    all records with a DOI-prefix 10.5281 we could use a regular expression
+    all records with a DOI-prefix 10.5281/zenodo we could use a regular expression
     search:
   </p>
   <p>
     <strong>Example:</strong>
-    <a href="/search?page=1&amp;size=20&amp;q=metadata.subjects.identifier:%2F03yrm5c2%5B1%2C6%5D%2F"
-      ><code>metadata.subjects.identifier:/03yrm5c2[1,6]/</code></a
-    >
+    <a href="/search?page=1&amp;size=20&amp;q=metadata.subjects.identifier%3A10%5C.5281%2Fzenodo.*"
+      ><code>metadata.subjects.identifier:10\.5281/zenodo.*</code></a>
   </p>
   <p>
     Careful, the regular expression must match the <em>entire</em> field value.
     See the
     <a
       href="https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-regexp-query.html#regexp-syntax"
-      >regular expression syntax</a
-    >
+      >regular expression syntax</a>
     for further details.
   </p>
   <h3>Missing values</h3>
@@ -231,15 +202,13 @@
   <p>
     <strong>Example:</strong>
     <a href="/search?page=1&amp;size=20&amp;q=_missing_:metadata.additional_titles"
-      ><code>_missing_:metadata.additional_titles</code></a
-    >
+      ><code>_missing_:metadata.additional_titles</code></a>
     (all records without metadata.additional_titles)
   </p>
   <p>
     <strong>Example:</strong>
     <a href="/search?page=1&amp;size=20&amp;q=_exists_:metadata.creators"
-      ><code>_exists_:metadata.creators</code></a
-    >
+      ><code>_exists_:metadata.creators</code></a>
     (all records with metadata.creators)
   </p>
   <h3>Advanced concepts</h3>
@@ -254,9 +223,8 @@
   <p>
     <strong>Example:</strong>
     <a
-      href="/search?page=1&amp;size=20&amp;q=metadata.title:%22open%20science%22%5E5%20metadata.description:%22temperature%22"
-      ><code>metadata.title:"temperature"^5 metadata.description:"temperature"</code></a
-    >
+      href="/search?page=1&amp;size=20&amp;q=metadata.title:%22temperaturee%22%5E5%20metadata.description:%22temperature%22"
+      ><code>metadata.title:"temperature"^5 metadata.description:"temperature"</code></a>
   </p>
   <h4>Fuzziness</h4>
   <p>
@@ -265,26 +233,26 @@
   </p>
   <p>
     <strong>Example:</strong>
-    <a href="/search?page=1&amp;size=20&amp;q=oepn~"><code>oepn~</code></a>
+    <a href="/search?page=1&amp;size=20&amp;q=color~"><code>color~</code></a>
   </p>
   <p>
-    Results will match records with terms similar to <code>oepn</code> which
-    would e.g. also match <code>open</code>.
+    Results will match records with terms similar to <code>color</code> which
+    would e.g. also match <code>colour</code>.
   </p>
   <h4>Proximity searches</h4>
-  <p>
-    A phrase search like <code>"open science"</code> by default expect all terms
+    <p>
+    A phrase search like <code>"land surface"</code> by default expect all terms
     in exactly the same order, and thus for instance would not match a record
-    containing the phrase <em>"open access and science"</em>. A proximity search
+    containing the phrase <em>"surface of the land"</em>. A proximity search
     allows that the terms are not in the exact order and may include other terms
     inbetween. The degree of flexiblity is specified by an integer afterwards:
   </p>
   <p>
     <strong>Example:</strong>
-    <a href="/search?page=1&amp;size=20&amp;q=%22open%20science%22~5"
-      ><code>"open science"~5</code></a
-    >
+    <a href="/search?page=1&amp;size=20&amp;q=%22land%20surface%22~5"
+      ><code>"land surface"~5</code></a>
   </p>
+  <p>
   <h4>Wildcards</h4>
   <p>
     You can use wildcards in search terms to replace a single character (using
@@ -293,9 +261,16 @@
   </p>
   <p>
     <strong>Example:</strong>
-    <a href="/search?page=1&amp;size=20&amp;q=ope%3F%20scien*"
-      ><code>ope? scien*</code></a
-    >
+    <a href="/search?page=1&amp;size=20&amp;q=observation?"
+      ><code>observation?</code></a>
+  </p>
+  <p>
+    Without the <code>?</code> we will miss all the results with the term <code>observations</code>
+  </p>
+  <p>
+    <strong>Example:</strong>
+    <a href="/search?page=1&amp;size=20&amp;q=observation"
+      ><code>observation</code></a>
   </p>
   <p>
     Wildcard searches can be slow and should normally be avoided if possible.
@@ -308,8 +283,7 @@
   <p>
     <strong>Example:</strong>
     <a href="/search?page=1&amp;size=20&amp;q=metadata.titles=!WRF"
-      ><code>metadata.titles=!WRF</code></a
-    >
+      ><code>metadata.titles=!WRF</code></a>
   </p>
   <p>
     Here I'm looking for `titles` that doesn't exists in the schema and instead of using `:` to find titles that don't contain `WRF` I'm using `=!` which is not a valid syntax.

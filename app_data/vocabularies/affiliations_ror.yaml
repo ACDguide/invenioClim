@@ -1,3 +1,126 @@
+- acronym: MetOffice
+  id: 01ch2yn61
+  identifiers:
+  - identifier: 01ch2yn61
+    scheme: ror
+  name: Met Office
+  title:
+    en: Met Office
+- acronym: ACE CRC
+  id: 03mxhzf09
+  identifiers:
+  - identifier: 03mxhzf09
+    scheme: ror
+  name: Antarctic Climate and Ecosystems Cooperative Research Centre
+  title:
+    en: Antarctic Climate and Ecosystems Cooperative Research Centre
+- acronym: ARCCSS
+  id: 0288wcg94
+  identifiers:
+  - identifier: 0288wcg94
+    scheme: ror
+  name: Centre of Excellence for Climate System Science
+  title:
+    en: Centre of Excellence for Climate System Science
+- acronym: CAWCR
+  id: 01ew37b76
+  identifiers:
+  - identifier: 01ew37b76
+    scheme: ror
+  name: Collaboration for Australian Weather and Climate Research
+  title:
+    en: Collaboration for Australian Weather and Climate Research
+- acronym: WHOI
+  id: 03zbnzt98
+  identifiers:
+  - identifier: 03zbnzt98
+    scheme: ror
+  name: Woods Hole Oceanographic Institution
+  title:
+    en: Woods Hole Oceanographic Institution
+    fr: "Institut oc\xE9anographique de woods hole"
+- acronym: NOAA
+  id: 02z5nhe81
+  identifiers:
+  - identifier: 02z5nhe81
+    scheme: ror
+  name: National Oceanic and Atmospheric Administration
+  title:
+    en: National Oceanic and Atmospheric Administration
+    es: "Administraci\xF3n Nacional Oce\xE1nica y Atmosf\xE9rica"
+- acronym: NASA
+  id: 027ka1x80
+  identifiers:
+  - identifier: 027ka1x80
+    scheme: ror
+  name: National Aeronautics and Space Administration
+  title:
+    en: National Aeronautics and Space Administration
+- acronym: NWS
+  id: 00tgqzw13
+  identifiers:
+  - identifier: 00tgqzw13
+    scheme: ror
+  name: National Weather Service
+  title:
+    en: National Weather Service
+- acronym: WMO
+  id: 011pjwf87
+  identifiers:
+  - identifier: 011pjwf87
+    scheme: ror
+  name: World Meteorological Organization
+  title:
+    en: World Meteorological Organization
+- acronym: NIMS
+  id: 04m2hj141
+  identifiers:
+  - identifier: 04m2hj141
+    scheme: ror
+  name: National Institute of Meteorological Sciences
+  title:
+    en: National Institute of Meteorological Sciences
+- acronym: MPI-M
+  id: 05esem239
+  identifiers:
+  - identifier: 05esem239
+    scheme: ror
+  name: Max Planck Institute for Meteorology
+  title:
+    de: "Max-Planck-Institut f\xFCr Meteorologie"
+    en: Max Planck Institute for Meteorology
+- acronym: RMETS
+  id: 02z296148
+  identifiers:
+  - identifier: 02z296148
+    scheme: ror
+  name: Royal Meteorological Society
+  title:
+    en: Royal Meteorological Society
+- acronym: AMS
+  id: 00dpx3e98
+  identifiers:
+  - identifier: 00dpx3e98
+    scheme: ror
+  name: American Meteorological Society
+  title:
+    en: American Meteorological Society
+- acronym: ECMWF
+  id: 014w0fd65
+  identifiers:
+  - identifier: 014w0fd65
+    scheme: ror
+  name: European Centre for Medium-Range Weather Forecasts
+  title:
+    en: European Centre for Medium-Range Weather Forecasts
+- acronym: JMA
+  id: 02772kk97
+  identifiers:
+  - identifier: 02772kk97
+    scheme: ror
+  name: Japan Meteorological Agency
+  title:
+    en: Japan Meteorological Agency
 - acronym: Monash
   id: 02bfwt286
   identifiers:
