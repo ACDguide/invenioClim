@@ -29,6 +29,21 @@ names:
 relationtypes:
   pid-type: rlt
   data-file: vocabularies/relation_types.yaml
+resolutions:
+  pid-type: rsl
+  data-file: vocabularies/horizontal_res.yaml
+regions:
+  pid-type: rgn
+  data-file: vocabularies/regions.yaml
+frequencies:
+  pid-type: frq
+  data-file: vocabularies/frequencies.yaml
+realms:
+  pid-type: rlm 
+  data-file: vocabularies/realms.yaml
+formats:
+  pid-type: frm 
+  data-file: vocabularies/file_formats.yaml
 subjects:
   pid-type: sub
   schemes:
@@ -36,21 +51,21 @@ subjects:
       name: ANZSRC 2020 Fields of Research
       uri: "https://www.abs.gov.au/statistics/classifications/australian-and-new-zealand-standard-research-classification-anzsrc/2020/anzsrc2020_for.xlsx"
       data-file: vocabularies/subjects_anzsrc_for.yaml
-    - id: realm 
-      name: ACDGuide realms
-      data-file: vocabularies/realms.yaml
-    - id: region 
-      name: ACDGuide regions
-      data-file: vocabularies/regions.yaml
-    - id: frequency 
-      name: ACDGuide frequencies
-      data-file: vocabularies/frequencies.yaml
-    - id: resolution 
-      name: ACDGuide approximate horizontal resolutions
-      data-file: vocabularies/horizontal_res.yaml
+        #    - id: realm 
+        #      name: ACDGuide realms
+        #      data-file: vocabularies/realms.yaml
+        #    - id: region 
+        #      name: ACDGuide regions
+        #      data-file: vocabularies/regions.yaml
+        #    - id: frequency 
+        #      name: ACDGuide frequencies
+        #      data-file: vocabularies/frequencies.yaml
+        #    - id: resolution 
+        #      name: ACDGuide approximate horizontal resolutions
+        #      data-file: vocabularies/horizontal_res.yaml
 #    - id: variable 
 #      name: ACDGuide variables
 #      data-file: vocabularies/variables.yaml
-    - id: format 
-      name: ACDGuide file formats
-      data-file: vocabularies/file_formats.yaml
+#    - id: format 
+#      name: ACDGuide file formats
+#      data-file: vocabularies/file_formats.yaml

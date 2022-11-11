@@ -1,1 +1,30 @@
-@import "@less/invenio_app_rdm/theme";
+.section-title {
+  -webkit-font-smoothing: antialiased;
+  width: 100%;
+  text-align: center;
+  display: block;
+  color: @primaryColor;
+  font-weight: 500;
+
+  h2& {
+    font-size: 2em;
+    margin-bottom: 3rem;
+
+    @media screen and (max-width: @largestMobileScreen) {
+      font-size: 1.7em;
+    }
+  }
+
+  h3& {
+    font-size: 1.5em;
+
+    @media screen and (max-width: @largestMobileScreen) {
+      font-size: 1.3em;
+    }
+  }
+}
+
+.rdm-logo {
+  width: 250px;
+  max-height: @75px;
+}

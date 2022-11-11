@@ -1,1 +1,17 @@
-@import "@less/invenio_app_rdm/variables";
+/* Override @primaryColor to override the site-wide accents. */
+@primaryColor: #4e73a2;
+
+/* Header */
+/* Override @navbarBackgroundImage to override the header background. */
+@navbarBackgroundImage: linear-gradient(
+  12deg,
+  rgba(3, 117, 180, 1),
+  rgba(3, 117, 180, 1) 15%,
+  rgba(115, 162, 78, 0.69) 
+);
+
+/* Footer */
+@footerLightColor: #73A24E;
+@footerDarkColor: #B37D4E; 
+/* @footerDarkColor: #73A24E; */ 
+@subFooterColor: #B37D4E;

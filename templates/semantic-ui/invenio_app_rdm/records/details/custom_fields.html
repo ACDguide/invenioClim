@@ -1,0 +1,34 @@
+{#
+  Copyright (C) 2020 CERN.
+  Copyright (C) 2020 Northwestern University.
+  Copyright (C) 2021 New York University.
+
+  Invenio RDM Records is free software; you can redistribute it and/or modify
+  it under the terms of the MIT License; see LICENSE file for more details.
+#}
+
+{%- set fields = record.custom_fields -%}
+
+
+{% if fields %}
+  {% for category in fields %}
+    <h3 class="ui tiny header">{{category|capitalize}}</h3>
+    {% set terms = fields[category]|list %}
+    {% if terms %}
+    <h3 class="hidden">{{ _('Keywords') }}</h3>
+    <ul class="ui horizontal list no-bullets subjects">
+      {%- for term in terms %}
+        <li class="item">
+		<a href='/search?q=custom_fields.{{category}}.id:"{{ term.id }}"'
+             class="subject"
+             title="{{ _('Search results for ') + term.title.en }}"
+          >
+            {{ term.title.en}}
+          </a>
+        </li>
+      {%- endfor %}
+    </ul>
+    {% endif %}
+  {%- endfor %}
+{% endif %}
+

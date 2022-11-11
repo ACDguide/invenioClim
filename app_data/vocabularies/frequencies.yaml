@@ -1,69 +1,69 @@
 ﻿- id: sub-30-min 
-  scheme: "frequency"
-  subject: "sub 30-min"
+  title:
+     en: "sub 30-min"
 - id: 30-min 
-  scheme: "frequency"
-  subject: "30-min"
+  title:
+     en: "30-min"
 - id: 1-hr 
-  scheme: "frequency"
-  subject:  "1-Hourly"
+  title:
+     en:  "1-Hourly"
 - id: 3-hr 
-  scheme: "frequency"
-  subject:  "1-Hourly"
+  title:
+     en:  "3-Hourly"
 - id: 6-hr 
-  scheme: "frequency"
-  subject:  "1-Hourly"
+  title:
+     en:  "6-Hourly"
 - id: 12-hr 
-  scheme: "frequency"
-  subject:  "12-Hourly"
+  title:
+     en:  "12-Hourly"
 - id: day
-  scheme: "frequency"
-  subject: "Daily"
+  title:
+     en: "Daily"
 - id: day-month 
-  scheme: "frequency"
-  subject: "1-day to 1-mon"
+  title:
+     en: "1-day to 1-mon"
 - id: mon
-  scheme: "frequency"
-  subject: "Monthly"
+  title:
+     en: "Monthly"
 - id: season 
-  scheme: "frequency"
-  subject: "Seasonal"
+  title:
+     en: "Seasonal"
 - id: year
-  scheme: "frequency"
-  subject: "Annual"
+  title:
+     en: "Annual"
 - id: multi-year
-  scheme: "frequency"
-  subject: "Multi Annual"
+  title:
+     en: "Multi Annual"
 - id: decad 
-  scheme: "frequency"
-  subject: "Decadal"
+  title:
+     en: "Decadal"
 - id: clim-hr 
-  scheme: "frequency"
-  subject:  "Hourly Climatology"
+  title:
+     en:  "Hourly Climatology"
 - id: clim-day 
-  scheme: "frequency"
-  subject: "Daily Climatology"
+  title:
+     en: "Daily Climatology"
 - id: clim-week 
-  scheme: "frequency"
-  subject: "Weekly Climatology"
+  title:
+     en: "Weekly Climatology"
 - id: clim-mon
-  scheme: "frequency"
-  subject: "Monthly Climatology"
+  title:
+     en: "Monthly Climatology"
 - id: clim-seas 
-  scheme: "frequency"
-  subject: "Seasonal Climatology"
+  title:
+     en: "Seasonal Climatology"
 - id: clim-year 
-  scheme: "frequency"
-  subject: "Annual Climatology"
+  title:
+     en: "Annual Climatology"
 - id: multi-year-clim
-  scheme: "frequency"
-  subject: "Multi Annual Climatology"
+  title:
+     en: "Multi Annual Climatology"
 - id: clim-normal
-  scheme: "frequency"
-  subject: "Climate Normal (30-year climatology)"
+  title:
+     en: "Climate Normal (30-year climatology)"
 - id: event 
-  scheme: "frequency"
-  subject: "Event based"
+  title:
+     en: "Event based"
 - id: irregular 
-  scheme: "frequency"
-  subject: "Irregular"
+  title:
+     en: "Irregular"

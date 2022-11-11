@@ -18,4 +18,7 @@
   </section>
 {% endif %}
 
-{{ show_add_descriptions(record.ui.additional_descriptions) if record.ui.additional_descriptions }}
+{% if record.ui.additional_descriptions %}
+  {% set add_descriptions = metadata.get('additional_descriptions') %}
+  {{ show_add_descriptions(add_descriptions) }}
+{% endif %}

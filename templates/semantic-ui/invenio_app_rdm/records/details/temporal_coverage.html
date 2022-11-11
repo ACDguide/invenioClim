@@ -1,0 +1,33 @@
+{#
+  Copyright (C) 2022 CLEX
+  Add temporal coverage toside-bar if from-date/to-date are present in record
+#}
+
+{%- set dates = record.metadata.dates -%}
+
+
+{% if dates %}
+   {% set ns = namespace(fromdate="", todate="") %}
+   {% for date in dates %}
+     {% if date.type.id == 'from-date' %}
+        {% set ns.fromdate = date.date %}
+     {% elif date.type.id == 'to-date' %}
+        {% set ns.todate = date.date %}
+     {% endif %}
+   {%- endfor %}
+   {% if ns.fromdate != ""  and ns.todate != "" %}
+     <h3 class="ui tiny header">{{ns.fromdate}}</h3>
+     <h3 class="ui tiny header">{{ _('Temporal coverage') }}</h3>
+     <ul class="ui horizontal list no-bullets subjects">
+        <li class="item">
+		<a href='/search?q=(metadata.dates.date:{* TO {{ns.todate}}] AND metadata.dates.type.id:from-date) AND (metadata.dates.date:[{{ns.fromdate}} TO *} AND metadata.dates.type.id:to-date)'
+             class="subject"
+	     title="{{ _('Search results for records with an overlapping time range')}}"
+          >
+	  {{ns.fromdate}}/{{ns.todate}}
+          </a>
+        </li>
+     </ul>
+   {% endif %}
+{% endif %}
+

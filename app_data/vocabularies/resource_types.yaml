@@ -253,6 +253,23 @@
   tags:
     - depositable
     - linkable
+- id: service-training 
+  icon: asterisk
+  props:
+    csl: webpage
+    datacite_general: Service
+    datacite_type: ''
+    openaire_resourceType: '20'
+    openaire_type: other
+    eurepo: info:eu-repo/semantics/other
+    schema.org: https://schema.org/Service
+    subtype: service-training 
+    type: service
+  title:
+    en: Training
+  tags:
+    - depositable
+    - linkable
 - id: metadata 
   icon: file alternate
   props:

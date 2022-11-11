@@ -8,9 +8,17 @@
   it under the terms of the MIT License; see LICENSE file for more details.
 #}
 
-{% if record.metadata.subjects %}
+{% if record.metadata.subjects or record.custom_fields %}
 <section id="keywords-and-subjects" aria-label="{{ _('Keywords and subjects') }}" class="ui segment rdm-sidebar">
   <h2 class="ui small header">{{ _('Keywords and subjects') }}</h2>
-  {%- include "invenio_app_rdm/records/details/subjects.html" %}
+  {% if record.metadata.subjects%}
+    {%- include "invenio_app_rdm/records/details/subjects.html" %}
+  {% endif %}
+  {% if record.custom_fields %}
+    {%- include "invenio_app_rdm/records/details/custom_fields.html" %}
+  {% endif %}
+  {% if record.metadata.dates %}
+    {%- include "invenio_app_rdm/records/details/temporal_coverage.html" %}
+  {% endif %}
 </section>
 {% endif %}

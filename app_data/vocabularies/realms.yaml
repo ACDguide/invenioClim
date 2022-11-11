@@ -1,24 +1,24 @@
 - id: aerosol
-  scheme: "realm"
-  subject: "Aerosol"
+  title:
+     en: "Aerosol"
 - id: atmos 
-  scheme: "realm"
-  subject: "Atmosphere"
+  title:
+     en: "Atmosphere"
 - id: atmosChem 
-  scheme: "realm"
-  subject: "Atmospheric Chemistry"
+  title:
+     en: "Atmospheric Chemistry"
 - id: land 
-  scheme: "realm"
-  subject: "Land Surface"
+  title:
+     en: "Land Surface"
 - id: landIce 
-  scheme: "realm"
-  subject: "Land Ice"
+  title:
+     en: "Land Ice"
 - id: ocean 
-  scheme: "realm"
-  subject: "Ocean"
+  title:
+     en: "Ocean"
 - id: ocnBgchem 
-  scheme: "realm"
-  subject: "Ocean Biogeochemistry"
+  title:
+     en: "Ocean Biogeochemistry"
 - id: seaIce 
-  scheme: "realm"
-  subject: "Sea ice"
+  title:
+     en: "Sea ice"

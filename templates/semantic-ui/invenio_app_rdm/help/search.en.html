@@ -9,11 +9,12 @@
 {%- extends config.BASE_TEMPLATE %}
 
 {%- block page_body %}
-<div class="ui container">
+<div class="ui container" mt-25>
   <h1>Search guide</h1>
   <p>
     This guide explains how to write advanced search queries using easy
     to understand examples. Click on the examples to see the queries' results.
+    You can also use these examples as bases for your queries, just change the input parameters on the search box after running them.
   </p>
     <strong>Example:</strong>
     <a href="/search?page=1&amp;size=20&amp;q=temperature%20evaporation"
@@ -40,15 +41,15 @@
   </p>
   <p>
     You can require <em>absence</em> of one or more terms using either the
-    <code>-</code> or <code>NOT</code> operator, for example if you want `temperature` data but excluding CMIP related results:
+    <code>-</code> or <code>NOT</code> operator, for example if you want `temperature` data but excluding BARRA related results:
   </p>
   <p>
     <strong>Examples:</strong>
-    <a href="/search?page=1&amp;size=20&amp;q=-CMIP%20%2Btemperature"
-      ><code>-CMIP +temperature</code></a>
+    <a href="/search?page=1&amp;size=20&amp;q=-BARRA%20%2Btemperature"
+      ><code>-BARRA +temperature</code></a>
     or
-    <a href="/search?page=1&amp;size=20&amp;q=NOT%20CMIP%20AND%20temperature"
-      ><code>NOT CMIP AND temperature</code></a>
+    <a href="/search?page=1&amp;size=20&amp;q=NOT%20BARRA%20AND%20temperature"
+      ><code>NOT BARRA AND temperature</code></a>
   </p>
   <h3>Phrase search</h3>
   <p>
@@ -77,6 +78,11 @@
       ><code>metadata.title:(precipitation rainfall)</code></a>
   </p>
   <p>
+    <strong>Example:</strong>
+    <a href="/search?page=1&amp;size=20&amp;q=metadata.creators.person_or_org.name:(Paola)"
+      ><code>metadata.creators.person_or_org.name: "Paola"</code></a> This will return all records that have authors whose name contains "Paola".
+  </p>
+  <p>
     See the field reference below for the full list of fields you can search.
   </p>
   <h3>Combined simple, phrase or field search</h3>
@@ -85,31 +91,26 @@
     <a
       href="/search?page=1&amp;size=20&amp;q=%2Bmetadata.title:%22land%20surface%22%20-metadata.title:monthly"
       ><code>+metadata.title:"land surface" -metadata.title:monthly</code></a>
-    or e.g.
-    <a href="/search?page=1&amp;size=20&amp;q=metadata.title:(-open%20%2Bscience%29"
-      ><code>metadata.title:(-open +science)</code></a
-    >
   </p>
   <p>
     You can combine simple, phrase and field search to construct advanced search
     queries.
   </p>
-  <h3>Range search</h3>
-  <p>
+  <h3>Dates and temporal range search</h3>
     <strong>Example:</strong>
     <a
-      href="/search?page=1&amp;size=20&amp;q=metadata.publication_date:%5B2019%20TO%202021-06%5D"
-      ><code>metadata.dates.date:[1980 TO 1990] AND metadata.dates.type.id:from-date</code></a>
+      href="/search?page=1&amp;size=20&amp;q=metadata.publication_date:%5B2020%20TO%202021-06%5D"
+      ><code>metadata.publication_date:[2020 TO 2021-06]</code></a>
     (note, you must capitalize <code>TO</code>).
   </p>
   <p>
-    Results will match any record with a <coverage_from> date between 1980-01-01 and
-    1990-01-01 (both dates inclusive).
+    Results will match any record with a publication_date between 2020-01-01 and
+    2021-06-01 (both dates inclusive).
   </p>
   <p>Note that, partial dates are expanded to full dates, e.g.:</p>
   <ul>
-    <li>1980 is expanded to 1980-01-01</li>
-    <li>1980-06 is expanded to 1980-06-01</li>
+    <li>2020 is expanded to 2020-01-01</li>
+    <li>2021-06 is expanded to 2021-06-01</li>
   </ul>
   <p>
     Use square brackets (<code>[]</code>) for <em>inclusive</em> ranges and use
@@ -124,45 +125,45 @@
   </ul>
   <h3>Selecting records including data in a given temporal range</h3>
   <p>
-     The portal uses a <code>coverage</code> date_type to indicate the temporal range covered by a dataset. Coverage is composed by a <code>from-date/to-date</code> pair.
-    To select the records that cover the entire period between two dates, for example from 1990 to 2000, coverage needs to satisfy 3 conditions:
+     The portal uses a combination of <code>from/to</code> date_type to indicate the temporal range covered by a dataset.
+    To select the records that cover the entire period between two dates, for example from 1870 to 1900, coverage needs to satisfy 2 conditions:
   <ul>
-    <li>date of type <code>coverage</code></li>
-    <li>range containing a date <= 1990</li>
-    <li>range containing a date >= 2000</li>
+    <li>date of type <code>from-date</code> containing a date &le; 1870</li>
+    <li>date of type <code>to-date</code> containing a date &ge; 1900</li>
   </ul>
   </p>
   <p>
   <strong>Example:</strong>	    
   <ul>
-    <li><a
-       href="/search?page=1&amp;size=20&amp;q=range%3A%7Bmetadata.dates.date%7Bgte%3A1990%2C+lte%3A2000%2C+relation%3A%22contains%22%7D%7D+AND+metadata.dates.type.id%3Acoverage"
-      ><code>range:{metadata.dates.date{gte:1990, lte:2000, relation:"contains"}} AND metadata.dates.type.id:coverage)</code></a: Testing relation.>
-    </li>
     <li>
     <a
-      href="/search?page=1&amp;size=20&amp;q=metadata.dates.date%3A%28%7B*+TO+1990%5D+AND+%5B2000+TO+*%7D%29+AND+metadata.dates.type.id%3Acoverage"
-      ><code>metadata.dates.date:({* TO 1990] AND [2000 TO *}) AND metadata.dates.type.id:coverage</code></a: All days until 1990 for from-date and all days from 2000 for to-date.>
+      href="/search?page=1&amp;size=20&amp;q=%28metadata.dates.date%3A%5B%2A%20TO%201870%5D%20AND%20metadata.dates.type.id%3Afrom-date%29%20AND%20%28metadata.dates.date%3A%5B1900%20TO%20%2A%5D%20AND%20metadata.dates.type.id%3Ato-date%29"
+      ><code>(metadata.dates.date:{* TO 1870] AND metadata.dates.type.id:from-date) AND (metadata.dates.date:[1900 TO *} AND metadata.dates.type.id:to-date)</code></a>. All days until 1870 for from-date and all days from 1900 for to-date.>
     </li>
   </ul>
   </p>
   <p>
+    
     To select all records that have some data in the selected period, the interval boundaries are swapped:
   <ul>
     <li>
-     <p>date of type `coverage`</p>
-     <p>date containing a date <= 2000</p>
-     <p>date containing a date >= 1990</p>
+    <li>date of type <code>from-date</code> containing a date &le; 1900</li>
+    <li>date of type <code>to-date</code> containing a date &ge; 1870</li>
     </li>
   </ul>
   </p>
+  <p>The results include CMIP and derived datasets as their temporal coverage starts at 1850<p> 
   <ul>
     <li>
     <a
-      href="/search?page=1&amp;size=20&amp;q=metadata.dates.date%3A%28%7B*+TO+2000%5D+AND+%5B1990+TO+*%7D%29+AND+metadata.dates.type.id%3Acoverage"
-      ><code>metadata.dates.date:({* TO 2000] AND [1990 TO *}) AND metadata.dates.type.id:coverage</code></a: All days until 2000 for from-date and all days from 1990 for to-date.>
+      href="/search?page=1&amp;size=20&amp;q=%28metadata.dates.date%3A%5B%2A%20TO%201900%5D%20AND%20metadata.dates.type.id%3Afrom-date%29%20AND%20%28metadata.dates.date%3A%5B1870%20TO%20%2A%5D%20AND%20metadata.dates.type.id%3Ato-date%29"
+      ><code>(metadata.dates.date:{* TO 1900] AND metadata.dates.type.id:from-date) AND (metadata.dates.date:[1870 TO *} AND metadata.dates.type.id:to-date)</code></a>. All days until 1900 for from-date and all days from 1870 for to-date.
     </li>
   </ul>
+  <p>The results now include the GPCC datasets which have data starting from 1891</p>
+  <p>These expressions are quite long, we are working on a template that will run the same queries just given a few arguments</p>
+
+
   <h3>Ranking/Sorting</h3>
   <p>
     By default all searches are sorted according to an internal ranking
@@ -182,10 +183,13 @@
   </p>
   <p>
     <strong>Example:</strong>
-    <a href="/search?page=1&amp;size=20&amp;q=metadata.subjects.identifier%3A10%5C.5281%2Fzenodo.*"
-      ><code>metadata.subjects.identifier:10\.5281/zenodo.*</code></a>
+    <a href="/search?page=1&amp;size=20&amp;q=metadata.pids.doi.identifier10%5C.5281%5C%2Fzenodo%5C%2A"
+      ><code>metadata.pids.doi.identifier10\.5281\/zenodo\*</code></a>
   </p>
   <p>
+    Careful, the regular expression must match the <em>entire</em> field value.
+    See the
+    <a
     Careful, the regular expression must match the <em>entire</em> field value.
     See the
     <a
@@ -275,7 +279,6 @@
   <p>
     Wildcard searches can be slow and should normally be avoided if possible.
   </p>
-</div>
   <h3>Query returns no matches even when expected!</h3>
   <p>
     This can happen because you used the wrong syntax, the query will say it couldn't find any matching records in such case rather than pointing out the issue.
@@ -284,6 +287,8 @@
     <strong>Example:</strong>
     <a href="/search?page=1&amp;size=20&amp;q=metadata.titles=!WRF"
       ><code>metadata.titles=!WRF</code></a>
+    <a href="/search/template?id="my-first-script",params={ "word": "CLEF"}}"
+      ><code>metadata.titles=CLEF</code></a>
   </p>
   <p>
     Here I'm looking for `titles` that doesn't exists in the schema and instead of using `:` to find titles that don't contain `WRF` I'm using `=!` which is not a valid syntax.
@@ -291,4 +296,5 @@
     <p>
     If using booleans as AND / OR as long as one of the query has correct syntax and matches you will get some result even if the other side of the query is not getting evaluated because the syntax is wrong
   </p>
+</div>
 {%- endblock page_body%}

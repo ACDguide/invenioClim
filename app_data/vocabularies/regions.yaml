@@ -1,36 +1,42 @@
 - id: global 
-  scheme: "region"
-  subject: "Global"
+  title:
+     en: "Global"
 - id: australia 
-  scheme: "region"
-  subject: "Australia" 
+  title:
+     en: "Australia" 
 - id: oceania
-  scheme: "region"
-  subject: "Oceania" 
+  title:
+     en: "Oceania" 
 - id:  arctic-ocean 
-  scheme: "region"
-  subject: "Arctic ocean" 
+  title:
+     en: "Arctic ocean" 
 - id: atlantic 
-  scheme: "region"
-  subject: "Atlantic ocean" 
+  title:
+     en: "Atlantic ocean" 
 - id: indian
-  scheme: "region"
-  subject: "Indian ocean" 
+  title:
+     en: "Indian ocean" 
 - id: pacific
-  scheme: "region"
-  subject: "Pacific Ocean"
+  title:
+     en: "Pacific Ocean"
 - id:  southern 
-  scheme: "region"
-  subject: "Southern ocean" 
+  title:
+     en: "Southern ocean" 
 - id: europe 
-  scheme: "region"
-  subject: "Europe" 
+  title:
+     en: "Europe" 
 - id: north-america 
-  scheme: "region"
-  subject: "North America" 
+  title:
+     en: "North America" 
 - id: south-america 
-  scheme: "region"
-  subject: "South America" 
+  title:
+     en: "South America" 
 - id: antarctica 
-  scheme: "region"
-  subject: "Antarctica" 
+  title:
+     en: "Antarctica" 
+- id: asia 
+  title:
+     en: "Asia" 
+- id: africa 
+  title:
+     en: "Africa" 

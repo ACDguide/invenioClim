@@ -8,33 +8,41 @@
   under the terms of the MIT License; see LICENSE file for more details.
 #}
 
-<footer class="footer-global">
-  <div class="ui grid">
-    {%- block footer_top %}
-    <div class="row footer-top">
+<footer id="rdm-footer-element">
+  {%- block footer_top %}
+    <div class="footer-top">
       <div class="ui container">
-        <div class="ui grid">
-          <div class="invenio-rdm-footer">
-            {%- block footer_top_left %}
-            <div class="ui row grid">
-              <div class="rdm-footer">
-                <h4>{{_ ("About the catalogue")}}</h4>
-                <p class="margin-small"><a href="https://test.dmponline.cloud.edu.au/help/use.html">How to use</a></p>
-                <p class="margin-small"><a href="https://docs.google.com/document/d/1JTDIy8DMO6eBTda5qHHNm9A5ANR7t6HAvgpygPx90xk">Catalogue governance</a></p>
-                <p class="margin-small"><a href="https://test.dmponline.cloud.edu.au/help/search">Search Guide</a></p>
-              </div>
-              <div class="rdm-footer">
-                <h4>{{_ ("Get involved")}}</h4>
-                <p class="margin-small"><a href="">You can get involved by contributing new records or additional information on existing ones</a></p>
-              </div>
-              <div class="rdm-footer">
-                <h4>{{_ ("Community")}}</h4>
-                <p class="margin-small">The Australian Climate Data Guide single access working group: <a href="https://docs.google.com/document/d/1UHMH6cLI6Ag_TuHD2NChK-Irz4ENXI2i6IfQCIQeZ-Q">group goals</a></p>
-                <p class="margin-small"><a href="https://acdguide.github.io">Australia Climate Data Guide books</a></p>
-              </div>
+        {%- block footer_top_left %}
+          <div class="ui grid">
+            <div class="rdm-footer five wide tablet three wide computer column">
+              <h2 class="ui small header">{{_("About the catalogue")}}</h2>
+              {% trans catalogue_use="https://github.com/ACDguide/invenioClim/wiki/Guidelines-for-users" %}
+              <p><a href="{{catalogue_use}}">How to use</a></p>
+              {% endtrans %}
+              {% trans catalogue_gov="https://github.com/ACDguide/invenioClim/wiki/Governance" %}
+              <p><a href="{{catalogue_gov}}">Catalogue Governance</a></p>
+              {% endtrans %}
+              {% trans catalogue_search="https://oneclimate.dmponline.cloud.edu.au/help/search" %}
+              <p><a href="{{catalogue_search}}">Search Guide</a></p>
+              {% endtrans %}
             </div>
-            {%- endblock footer_top_left %}
-          </div>
+            <div class="rdm-footer five wide tablet three wide computer column">
+              <h2 class="ui small header">{{_ ("Get involved")}}</h2>
+              {% trans contributor_guide="https://github.com/ACDguide/invenioClim/wiki/Guidelines-for-contributors" %}
+              <p><a href="{{contributor_guide}}">You can get involved by contributing new records or additional information on existing ones</a></p>
+              {% endtrans %}
+            </div>
+            <div class="rdm-footer five wide tablet three wide computer column">
+              <h2 class="ui small header">{{_ ("Community")}}</h2>
+              {% trans acdg_goals="https://github.com/ACDguide/invenioClim/wiki/Single-Access-working-group" %}
+              <p><a href="{{acdg_goals}}">Australian Climate Data Guide single access group</a></p>
+              {% endtrans %}
+              {% trans acgd_books="https://acdguide.github.io" %}
+	      <p><a href="{{acgd_books}}">ACGD books</a></p>
+              {% endtrans %}
+            </div>
+
+          {%- endblock footer_top_left %}
           <div class="six wide column right aligned">
             {%- block footer_top_right %}
             {%- endblock footer_top_right %}
@@ -44,7 +52,7 @@
     </div>
     {%- endblock footer_top %}
     {%- block footer_bottom %}
-    <div class="row footer-bottom">
+    <div class="footer-bottom sub-footer">
       <div class="ui container">
         <div class="ui grid">
           <div class="eight wide column left middle aligned">
@@ -65,5 +73,4 @@
       </div>
     </div>
     {%- endblock footer_bottom %}
-  </div>
 </footer>

@@ -1,51 +1,54 @@
 - id: netcdf 
-  scheme: "format"
-  subject: "netcdf" 
+  title:
+     en: "netcdf" 
 - id: grib
-  scheme: "format"
-  subject: "grib" 
+  title:
+     en: "grib" 
 - id: hdf
-  scheme: "format"
-  subject: "hdf"
+  title:
+     en: "hdf"
 - id: binary 
-  scheme: "format"
-  subject: "other binary"
+  title:
+     en: "other binary"
 - id:  ascii
-  scheme: "format"
-  subject: "ascii" 
+  title:
+     en: "ascii" 
 - id: csv 
-  scheme: "format"
-  subject: "csv" 
+  title:
+     en: "csv" 
 - id: matlab
-  scheme: "format"
-  subject: "matlab" 
+  title:
+     en: "matlab" 
 - id: geotiff 
-  scheme: "format"
-  subject: "geotiff" 
+  title:
+     en: "geotiff" 
 - id: shapefile 
-  scheme: "format"
-  subject: "shapefile" 
+  title:
+     en: "shapefile" 
 - id: xml 
-  scheme: "format"
-  subject: "xml" 
+  title:
+     en: "xml" 
 - id: json 
-  scheme: "format"
-  subject: "json" 
+  title:
+     en: "json" 
 - id: yaml 
-  scheme: "format"
-  subject: "yaml" 
+  title:
+     en: "yaml" 
 - id: python 
-  scheme: "format"
-  subject: "python" 
+  title:
+     en: "python" 
 - id: rcran 
-  scheme: "format"
-  subject: "R" 
+  title:
+     en: "R" 
 - id: fortran 
-  scheme: "format"
-  subject: "fortran" 
+  title:
+     en: "fortran" 
 - id: julia 
-  scheme: "format"
-  subject: "julia" 
+  title:
+     en: "julia" 
+- id: shell 
+  title:
+     en: "shell" 
 - id: other-format 
-  scheme: "format"
-  subject: "other" 
+  title:
+     en: "other" 

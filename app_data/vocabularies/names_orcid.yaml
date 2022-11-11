@@ -78,6 +78,20 @@
       scheme: orcid
 - affiliations:
     - name: UNSW Sydney
+  family_name: Jucker
+  given_name: Martin
+  identifiers: 
+  - identifier: https://orcid.org/https://orcid.org/0000-0002-4227-315X
+    scheme: orcid
+- affiliations:
+    - name: UNSW Sydney
+  family_name: England
+  given_name: Matthew
+  identifiers: 
+  - identifier: https://orcid.org/0000-0001-9696-2930
+    scheme: orcid
+- affiliations:
+    - name: UNSW Sydney
   family_name: Abramowitz
   given_name: Gab
   identifiers: 

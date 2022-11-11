@@ -3,6 +3,16 @@
     datacite: Other
   title:
     en: "Temporal coverage"
+- id: from-date 
+  props:
+    datacite: Other 
+  title:
+    en: "From date"
+- id: to-date 
+  props:
+    datacite: Other 
+  title:
+    en: "To date"
 - id: collected
   props:
     datacite: Collected
